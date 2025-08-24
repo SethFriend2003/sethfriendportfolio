@@ -5,65 +5,52 @@
       "when": "2025",
       "role": "Controls & Mechatronics",
       "summary": "Designed a 7 kg biped with GIM6010-8 actuators. Implemented torque control via ODrive and explored RL gait policies; added external bearing load-path to protect motors.",
-      "tags": [
-        "robotics",
-        "controls",
-        "embedded",
-        "mechanical"
-      ],
-       "links": {
-    "github": "https://github.com/yourusername/bipedal-robot",
-    "demo": "",
-    "report": ""
-  },
-  "page": "projects/bipedal-robot.html"
-}
+      "tags": ["robotics", "controls", "embedded", "mechanical"],
+      "links": {
+        "github": "https://github.com/yourusername/bipedal-robot",
+        "demo": "",
+        "report": ""
+      },
+      "page": "projects/bipedal-robot.html"
+    },
     {
       "title": "TIW 1- Handheld Game Console",
       "when": "2024-2025",
       "role": "Firmware & CAD",
       "summary": "Built a DS inspired game console using a Raspberry Pi Zero and all in-house designed 3D printed parts.",
-      "tags": [
-        "cad",
-        "electrical"
-      ],
+      "tags": ["cad", "electrical"],
       "links": {
-        "github": "https://github.com/",
+        "github": "https://github.com/yourusername/handheld-console",
         "demo": "",
         "report": ""
-      }
+      },
+      "page": "projects/handheld-console.html"
     },
     {
       "title": "Ivy Technologies — Amazon Robotics Deployment",
       "when": "2025",
       "role": "Team Lead · Electromechanical",
       "summary": "Led on-site wiring and commissioning of robotic arms; coordinated safety checks and throughput tests; delivered go-live under deadline.",
-      "tags": [
-        "leadership",
-        "electrical",
-        "operations"
-      ],
+      "tags": ["leadership", "electrical", "operations"],
       "links": {
         "github": "",
         "demo": "",
         "report": ""
-      }
+      },
+      "page": "projects/ivy-technologies.html"
     },
     {
       "title": "2×4 Macropad · RP2040",
       "when": "2024",
       "role": "Firmware & CAD",
       "summary": "Designed a Pico-based macropad with 3D-printed case using CircuitPython and wire matrix.",
-      "tags": [
-        "embedded",
-        "electrical",
-        "cad"
-      ],
+      "tags": ["embedded", "electrical", "cad"],
       "links": {
-        "github": "https://github.com/",
+        "github": "https://github.com/yourusername/macropad",
         "demo": "",
         "report": ""
-      }
+      },
+      "page": "projects/macropad.html"
     }
   ]
 }
