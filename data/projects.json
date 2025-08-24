@@ -1,10 +1,10 @@
 {
   "projects": [
     {
-      "title": "Bipedal Robot (10\u00d7 BLDC + ODrive)",
+      "title": "Bipedal Robot (10× BLDC + ODrive)",
       "when": "2025",
       "role": "Controls & Mechatronics",
-      "summary": "Designed a 7\u202fkg biped with GIM6010-8 actuators. Implemented torque control via ODrive and explored RL gait policies; added external bearing load-path to protect motors.",
+      "summary": "Designed a 7 kg biped with GIM6010-8 actuators. Implemented torque control via ODrive and explored RL gait policies; added external bearing load-path to protect motors.",
       "tags": [
         "robotics",
         "controls",
@@ -14,19 +14,18 @@
       "links": {
         "github": "https://github.com/",
         "demo": "https://youtube.com/",
-        "report": ""
+        "report": "",
         "page": "projects/bipedal-robot.html"
       }
     },
     {
       "title": "TIW 1- Handheld Game Console",
       "when": "2024-2025",
-      "role": "",
-      "summary": "Built a DS inspired game console using a Rasberry Pi Zero and all in house designed 3D printed parts.",
+      "role": "Firmware & CAD",
+      "summary": "Built a DS inspired game console using a Raspberry Pi Zero and all in-house designed 3D printed parts.",
       "tags": [
         "cad",
-        "electrical",
-        
+        "electrical"
       ],
       "links": {
         "github": "https://github.com/",
@@ -35,10 +34,10 @@
       }
     },
     {
-      "title": "Ivy Technologies \u2014 Amazon Robotics Deployment",
+      "title": "Ivy Technologies — Amazon Robotics Deployment",
       "when": "2025",
-      "role": "Team Lead \u00b7 Electromechanical",
-      "summary": "Led on-site wiring and commissioning of robotic arms; coordinated safety checks and throughput tests; delivered go\u2011live under deadline.",
+      "role": "Team Lead · Electromechanical",
+      "summary": "Led on-site wiring and commissioning of robotic arms; coordinated safety checks and throughput tests; delivered go-live under deadline.",
       "tags": [
         "leadership",
         "electrical",
@@ -50,12 +49,11 @@
         "report": ""
       }
     },
-    
     {
-      "title": "2\u00d74 Macropad \u00b7 RP2040",
+      "title": "2×4 Macropad · RP2040",
       "when": "2024",
       "role": "Firmware & CAD",
-      "summary": "Designed a Pico\u2011based macropad with 3D\u2011printed case using circuit python and wire matrix.",
+      "summary": "Designed a Pico-based macropad with 3D-printed case using CircuitPython and wire matrix.",
       "tags": [
         "embedded",
         "electrical",
