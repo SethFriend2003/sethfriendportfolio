@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bipedal Robot — Seth Friend</title>
   <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 0; padding: 20px; line-height: 1.6; }
+    header { margin-bottom: 20px; }
+    header a { text-decoration: none; color: #6ca0ff; }
+    main img { max-width: 600px; width: 100%; border-radius: 12px; margin: 20px 0; }
+  </style>
 </head>
 <body>
   <header>
@@ -12,26 +18,31 @@
   </header>
 
   <main>
-    <h1>Bipedal Robot</h1>
+    <h1>Bipedal Robot (10× BLDC + ODrive)</h1>
     <p><strong>Date:</strong> 2025 · <strong>Role:</strong> Controls & Mechatronics</p>
 
-    <img src="../assets/biped.jpg" alt="Bipedal robot photo" style="max-width:600px; border-radius:12px; margin:20px 0;">
+    <img src="../assets/biped.jpg" alt="Photo of my bipedal robot">
 
     <p>
-      This 7 kg biped robot uses 10 GIM6010-8 BLDC actuators with ODrive-style controllers. 
-      I designed custom load-bearing mounts, implemented torque control, and experimented with reinforcement learning gait policies.
+      This project is a <strong>7 kg bipedal robot</strong> powered by ten GIM6010-8 BLDC actuators with ODrive-style controllers. 
+      My focus was on building a reliable load path, protecting the motors with external bearings, 
+      and implementing torque-based control for walking.
     </p>
 
+    <h2>Key Work</h2>
     <ul>
-      <li>Designed and fabricated custom aluminum brackets (SendCutSend + 3D printed parts).</li>
-      <li>Implemented CAN-FD bus for motor communication.</li>
-      <li>Trained PPO policies for balance and step cycles.</li>
+      <li>Designed custom aluminum plates and 3D-printed TPU feet for mechanical durability.</li>
+      <li>Implemented CAN-FD motor communication with Teensy 4.1 microcontroller.</li>
+      <li>Developed torque-controlled gait cycle and experimented with reinforcement learning policies.</li>
+      <li>Integrated sensors for stability feedback and motor safety.</li>
     </ul>
 
+    <h2>Links</h2>
     <p>
       <a href="https://github.com/yourusername/bipedal-robot" target="_blank">View Code</a> ·
-      <a href="https://youtu.be/demo" target="_blank">Watch Demo</a>
+      <a href="https://youtube.com/" target="_blank">Watch Demo</a>
     </p>
   </main>
 </body>
 </html>
+
