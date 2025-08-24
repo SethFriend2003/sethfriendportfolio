@@ -19,13 +19,13 @@
       "page": "projects/handheld-console.html"
     },
     {
-      "title": "Ivy Technologies — Amazon Robotics Deployment",
-      "when": "2025",
+      "title": "Battle Bots",
+      "when": "2024 & 2025",
       "role": "Team Lead · Electromechanical",
       "summary": "Led wiring/commissioning of robotic arms; safety checks and throughput testing under deadlines.",
       "tags": ["leadership", "electrical", "operations"],
       "links": { "github": "", "demo": "", "report": "" },
-      "page": "projects/ivy-technologies.html"
+      "page": "battlebot.html"
     },
     {
       "title": "2×4 Macropad · RP2040",
