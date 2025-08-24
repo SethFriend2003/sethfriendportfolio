@@ -35,7 +35,7 @@
       "tags": ["embedded", "electrical", "cad"],
       "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
       "page": "projects/macropad.html"
-    }
+    },
         {
       "title": "Servo Controlled Glider",
       "when": "2025",
@@ -44,6 +44,6 @@
       "tags": ["leadership", "electrical", "mechanical"],
       "links": { "github": "", "demo": "", "report": "" },
       "page": "glider.html"
-    },
+    }
   ]
 }
