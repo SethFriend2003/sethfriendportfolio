@@ -54,10 +54,10 @@
       "title": "2\u00d74 Macropad \u00b7 RP2040",
       "when": "2024",
       "role": "Firmware & CAD",
-      "summary": "Designed a Pico\u2011based macropad with QMK\u2011style firmware; custom PCB and 3D\u2011printed case; USB\u2011HID over CircuitPython.",
+      "summary": "Designed a Pico\u2011based macropad with 3D\u2011printed case using circuit python and wire matrix.",
       "tags": [
         "embedded",
-        "pcb",
+        "electrical",
         "cad"
       ],
       "links": {
