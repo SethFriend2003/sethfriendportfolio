@@ -11,13 +11,13 @@
         "embedded",
         "mechanical"
       ],
-      "links": {
-        "github": "https://github.com/",
-        "demo": "https://youtube.com/",
-        "report": "",
-        "page": "projects/bipedal-robot.html"
-      }
-    },
+       "links": {
+    "github": "https://github.com/yourusername/bipedal-robot",
+    "demo": "",
+    "report": ""
+  },
+  "page": "projects/bipedal-robot.html"
+}
     {
       "title": "TIW 1- Handheld Game Console",
       "when": "2024-2025",
