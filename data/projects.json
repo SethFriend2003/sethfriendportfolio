@@ -36,5 +36,14 @@
       "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
       "page": "projects/macropad.html"
     }
+        {
+      "title": "Servo Controlled Glider",
+      "when": "2025",
+      "role": "Team Lead · Design",
+      "summary": "Created a servo steered glider as part of an electronics competition test run. Uses ESP32 Now to communicate and a wii joystick.",
+      "tags": ["leadership", "electrical", "mechanical"],
+      "links": { "github": "", "demo": "", "report": "" },
+      "page": "glider.html"
+    },
   ]
 }
