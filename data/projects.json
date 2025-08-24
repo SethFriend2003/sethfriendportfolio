@@ -1,1 +1,85 @@
-
+{
+  "projects": [
+    {
+      "title": "Bipedal Robot (10\u00d7 BLDC + ODrive)",
+      "when": "2025",
+      "role": "Controls & Mechatronics",
+      "summary": "Designed a 7\u202fkg biped with GIM6010-8 actuators. Implemented torque control via ODrive and explored RL gait policies; added external bearing load-path to protect motors.",
+      "tags": [
+        "robotics",
+        "controls",
+        "embedded",
+        "mechanical"
+      ],
+      "links": {
+        "github": "https://github.com/",
+        "demo": "https://youtube.com/",
+        "report": ""
+      }
+    },
+    {
+      "title": "Robodog Leg \u2014 Reinforcement Learning",
+      "when": "2024",
+      "role": "RL & Firmware",
+      "summary": "Built a single-leg testbed; trained PPO for force tracking at 50\u202fHz; deployed on Pi + MCU with CAN interface to motor drivers.",
+      "tags": [
+        "robotics",
+        "rl",
+        "embedded"
+      ],
+      "links": {
+        "github": "https://github.com/",
+        "demo": "",
+        "report": ""
+      }
+    },
+    {
+      "title": "Ivy Technologies \u2014 Amazon Robotics Deployment",
+      "when": "2025",
+      "role": "Team Lead \u00b7 Electromechanical",
+      "summary": "Led on-site wiring and commissioning of robotic arms; coordinated safety checks and throughput tests; delivered go\u2011live under deadline.",
+      "tags": [
+        "leadership",
+        "electrical",
+        "operations"
+      ],
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      }
+    },
+    {
+      "title": "Cu\u2013Ag Alloy Microstructure Study",
+      "when": "2024",
+      "role": "Materials Lab",
+      "summary": "Characterized phase behavior and hardness vs. heat treatment; wrote scripts to quantify grain size from micrographs.",
+      "tags": [
+        "materials",
+        "analysis",
+        "python"
+      ],
+      "links": {
+        "github": "",
+        "demo": "",
+        "report": ""
+      }
+    },
+    {
+      "title": "2\u00d74 Macropad \u00b7 RP2040",
+      "when": "2024",
+      "role": "Firmware & CAD",
+      "summary": "Designed a Pico\u2011based macropad with QMK\u2011style firmware; custom PCB and 3D\u2011printed case; USB\u2011HID over CircuitPython.",
+      "tags": [
+        "embedded",
+        "pcb",
+        "cad"
+      ],
+      "links": {
+        "github": "https://github.com/",
+        "demo": "",
+        "report": ""
+      }
+    }
+  ]
+}
