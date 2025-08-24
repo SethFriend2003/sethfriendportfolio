@@ -18,14 +18,14 @@
       }
     },
     {
-      "title": "Robodog Leg \u2014 Reinforcement Learning",
-      "when": "2024",
-      "role": "RL & Firmware",
-      "summary": "Built a single-leg testbed; trained PPO for force tracking at 50\u202fHz; deployed on Pi + MCU with CAN interface to motor drivers.",
+      "title": "TIW 1- Handheld Game Console",
+      "when": "2024-2025",
+      "role": "",
+      "summary": "Built a DS inspired game console using a Rasberry Pi Zero and all in house designed 3D printed parts.",
       "tags": [
-        "robotics",
-        "rl",
-        "embedded"
+        "cad",
+        "electrical",
+        
       ],
       "links": {
         "github": "https://github.com/",
@@ -49,22 +49,7 @@
         "report": ""
       }
     },
-    {
-      "title": "Cu\u2013Ag Alloy Microstructure Study",
-      "when": "2024",
-      "role": "Materials Lab",
-      "summary": "Characterized phase behavior and hardness vs. heat treatment; wrote scripts to quantify grain size from micrographs.",
-      "tags": [
-        "materials",
-        "analysis",
-        "python"
-      ],
-      "links": {
-        "github": "",
-        "demo": "",
-        "report": ""
-      }
-    },
+    
     {
       "title": "2\u00d74 Macropad \u00b7 RP2040",
       "when": "2024",
