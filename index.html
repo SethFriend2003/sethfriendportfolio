@@ -5,44 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seth Friend — Portfolio</title>
   <meta name="description" content="Portfolio of Seth Friend — robotics, controls, and embedded systems projects.">
+  <link rel="stylesheet" href="css/styles.css">
   <link rel="icon" href="assets/favicon.png">
-  <style>
-    :root{
-      --bg:#0b0e14; --fg:#eaeef3; --muted:#a9b1bd; --card:#151a23; --accent:#6ca0ff; --chip:#1f2530;
-      --maxw:1000px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;line-height:1.5}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
-    header{max-width:var(--maxw);margin:0 auto;padding:28px 20px 10px;display:flex;gap:16px;align-items:center;justify-content:space-between}
-    .brand{font-weight:700;letter-spacing:.3px}
-    nav a{margin-left:14px;color:var(--muted)}
-    .hero{max-width:var(--maxw);margin:0 auto;padding:30px 20px 10px;display:grid;grid-template-columns:1fr;gap:14px}
-    .hero h1{font-size:clamp(28px,4vw,42px);margin:0}
-    .hero p{margin:0;color:var(--muted)}
-    .cta{display:flex;gap:10px;margin-top:10px;flex-wrap:wrap}
-    .btn{background:var(--accent);color:#0b0e14;border:0;border-radius:10px;padding:10px 14px;font-weight:600}
-    .btn.secondary{background:transparent;color:var(--fg);border:1px solid #444}
-    section{max-width:var(--maxw);margin:0 auto;padding:22px 20px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-    .card{background:var(--card);padding:16px;border-radius:14px;border:1px solid #222}
-    .card h3{margin:0 0 6px 0}
-    .meta{font-size:12px;color:var(--muted);margin-bottom:8px}
-    .chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-    .chip{background:var(--chip);color:var(--muted);padding:4px 8px;border-radius:999px;font-size:12px}
-    footer{max-width:var(--maxw);margin:40px auto 60px;padding:0 20px;color:var(--muted);font-size:14px}
-    .filters{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0 16px}
-    .filter{padding:6px 10px;border:1px solid #333;border-radius:999px;background:transparent;color:var(--fg);font-size:12px;cursor:pointer}
-    .filter.active{background:var(--accent);color:#0b0e14;border-color:transparent}
-    .project-links a{margin-right:10px}
-    .avatar{width:52px;height:52px;border-radius:50%;background:#1b2230;display:inline-block}
-    @media (prefers-color-scheme: light){
-      :root{--bg:#f7f8fb;--fg:#0b0e14;--muted:#51606f;--card:#fff;--chip:#eef2f7}
-      .btn.secondary{border:1px solid #ddd}
-      .card{border-color:#eee}
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -50,7 +14,7 @@
     <nav>
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
-      <a href="sethfriendresume.pdf">Resume</a>
+      <a href="resume.pdf">Resume</a>
       <a href="mailto:seth@example.com">Contact</a>
     </nav>
   </header>
@@ -58,7 +22,7 @@
   <section class="hero">
     <div>
       <h1>Robotics & Embedded Systems Engineer</h1>
-      <p>ECE @ UT Austin. I build robots and other cool projects .</p>
+      <p>ECE @ UT Austin. I build robots and other cool projects.</p>
       <div class="cta">
         <a class="btn" href="#projects">See projects</a>
         <a class="btn secondary" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
@@ -66,9 +30,12 @@
     </div>
   </section>
 
-    <section id="about">
+  <section id="about">
     <h2>About</h2>
-    <p>I'm passionate about legged locomotion, control theory, and building systems that actually work in the real world. Currently a junior in ECE at UT Austin, previously an electromechanical engineer at Ivy Technologies (Amazon facility deployment).</p>
+    <p>
+      I'm passionate about legged locomotion, control theory, and building systems that actually work in the real world.
+      Junior in ECE at UT Austin; previously an electromechanical engineer at Ivy Technologies (Amazon facility deployment).
+    </p>
   </section>
 
   <section id="projects">
@@ -76,8 +43,6 @@
     <div class="filters" id="filters"></div>
     <div class="grid" id="projectGrid" aria-live="polite"></div>
   </section>
-
-
 
   <footer>
     <div>© <span id="year"></span> Seth Friend · <a href="mailto:seth@example.com">Email</a></div>
@@ -88,47 +53,80 @@
     const filtersEl = document.getElementById('filters');
     const state = { tag:null, data:[] };
 
+    // Detect GitHub Pages project site base ("/<repo>") or user site ("/")
+    const repo = (location.hostname.endsWith('github.io') ? location.pathname.split('/')[1] : '').trim();
+    const BASE = repo ? `/${repo}` : '';
+    const CANDIDATES = [
+      `${BASE}/data/projects.json`,
+      `${BASE}/projects.json`,
+      'data/projects.json',
+      'projects.json'
+    ];
+
+    async function loadProjects(urls){
+      const errs = [];
+      for (const u of urls){
+        try{
+          const r = await fetch(u, { cache: 'no-store' });
+          if (!r.ok) throw new Error(`${r.status} ${r.statusText}`);
+          const j = await r.json();
+          console.log('Loaded projects from:', u);
+          return j;
+        }catch(e){
+          errs.push(`${u} → ${e.message}`);
+          console.warn('Failed:', u, e.message);
+        }
+      }
+      throw new Error(errs.join('\n'));
+    }
+
     function render(){
       grid.innerHTML = '';
-      const items = state.data.filter(p => !state.tag || p.tags.includes(state.tag));
-      items.forEach(p => {
+      const items = state.data.filter(p => !state.tag || (p.tags||[]).includes(state.tag));
+      if (!items.length){
+        grid.innerHTML = '<p style="color:#888">No projects found.</p>';
+        return;
+      }
+      for (const p of items){
         const card = document.createElement('article');
         card.className = 'card';
         card.innerHTML = `
+          ${p.image ? `<img class="responsive" src="${p.image}" alt="${p.title}">` : ''}
           <h3>${p.title}</h3>
-          <div class="meta">${p.when} · ${p.role}</div>
+          <div class="meta">${p.when} · ${p.role || ''}</div>
           <p>${p.summary}</p>
-          <div class="chips">${p.tags.map(t=>`<span class="chip">${t}</span>`).join('')}</div>
+          <div class="chips">${(p.tags||[]).map(t=>`<span class="chip">${t}</span>`).join('')}</div>
           <div class="project-links" style="margin-top:10px;">
-            ${p.links.github? `<a href="${p.links.github}" target="_blank" rel="noreferrer">Code</a>`:''}
-            ${p.page ? `<a href="${p.page}">Read more</a>` : ""}
-            ${p.links.demo? `<a href="${p.links.demo}" target="_blank" rel="noreferrer">Demo</a>`:''}
-            ${p.links.report? `<a href="${p.links.report}" target="_blank" rel="noreferrer">Docs</a>`:''}
-          </div>
-        `;
+            ${p.page ? `<a href="${p.page}">Read more</a>` : ''}
+            ${p.links?.github ? `<a href="${p.links.github}" target="_blank" rel="noreferrer">Code</a>` : ''}
+            ${p.links?.demo ? `<a href="${p.links.demo}" target="_blank" rel="noreferrer">Demo</a>` : ''}
+            ${p.links?.report ? `<a href="${p.links.report}" target="_blank" rel="noreferrer">Docs</a>` : ''}
+          </div>`;
         grid.appendChild(card);
-      });
+      }
     }
 
     function renderFilters(){
       const all = new Set();
-      state.data.forEach(p => p.tags.forEach(t => all.add(t)));
+      state.data.forEach(p => (p.tags||[]).forEach(t => all.add(t)));
       const tags = ['all', ...Array.from(all).sort()];
-      filtersEl.innerHTML = '';
-      tags.forEach(tag => {
-        const btn = document.createElement('button');
-        btn.className = 'filter' + ((state.tag===null && tag==='all') || (state.tag===tag) ? ' active': '');
-        btn.textContent = tag;
-        btn.onclick = () => { state.tag = (tag==='all')? null : tag; renderFilters(); render(); };
-        filtersEl.appendChild(btn);
-      });
+      filtersEl.innerHTML = tags.map(tag =>
+        `<button class="filter${(state.tag===null && tag==='all') || state.tag===tag ? ' active' : ''}" data-t="${tag}">${tag}</button>`
+      ).join('');
+      filtersEl.onclick = (e) => {
+        if (!e.target.matches('button')) return;
+        const t = e.target.getAttribute('data-t');
+        state.tag = (t === 'all') ? null : t;
+        renderFilters(); render();
+      };
     }
 
-    fetch('data/projects.json').then(r => r.json()).then(d => {
-      state.data = d.projects;
-      renderFilters();
-      render();
-    });
+    loadProjects(CANDIDATES)
+      .then(d => { state.data = d.projects || []; renderFilters(); render(); })
+      .catch(err => {
+        console.error('Could not load projects.json\n' + err.message);
+        grid.innerHTML = '<div class="card" style="border-color:#e66"><h3>Could not load projects.json</h3><p>Check the file path and name.</p></div>';
+      });
 
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
