@@ -136,16 +136,13 @@ th<!doctype html>
   }
 
   // Fetch with helpful errors
-  fetch(PROJECTS_JSON_URL)
-    .then(r => {
-      if (!r.ok) throw new Error(`Fetch failed ${r.status} ${r.statusText}`);
-      return r.json();
-    })
-    .then(d => { state.data = d.projects || []; renderFilters(); render(); })
-    .catch(err => {
-      console.error('Could not load projects.json from', PROJECTS_JSON_URL, err);
-      grid.innerHTML = '<p style="color:#e66">Could not load projects. Check that <code>data/projects.json</code> exists.</p>';
-    });
+ fetch('/SethFriend2003/data/projects.json')
+  .then(r => r.json())
+  .then(d => { state.data = d.projects || []; renderFilters(); render(); })
+  .catch(err => { 
+    console.error(err); 
+    grid.innerHTML = '<p style="color:#e66">Could not load projects.</p>'; 
+  });
 
   // Footer year
   document.getElementById('year').textContent = new Date().getFullYear();
