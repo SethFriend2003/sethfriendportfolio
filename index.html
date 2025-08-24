@@ -1,8 +1,7 @@
-<!doctype html>
+th<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <base href="/SethFriend2003/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seth Friend — Portfolio</title>
   <meta name="description" content="Portfolio of Seth Friend — robotics, controls, and embedded systems projects.">
@@ -85,53 +84,69 @@
   </footer>
 
   <script>
-    const grid = document.getElementById('projectGrid');
-    const filtersEl = document.getElementById('filters');
-    const state = { tag:null, data:[] };
+    <script>
+  // Elements + state
+  const grid = document.getElementById('projectGrid');
+  const filtersEl = document.getElementById('filters');
+  const state = { tag: null, data: [] };
 
-    function render(){
-      grid.innerHTML = '';
-      const items = state.data.filter(p => !state.tag || p.tags.includes(state.tag));
-      items.forEach(p => {
-        const card = document.createElement('article');
-        card.className = 'card';
-        card.innerHTML = `
-          <h3>${p.title}</h3>
-          <div class="meta">${p.when} · ${p.role}</div>
-          <p>${p.summary}</p>
-          <div class="chips">${p.tags.map(t=>`<span class="chip">${t}</span>`).join('')}</div>
-          <div class="project-links" style="margin-top:10px;">
-            ${p.links.github? `<a href="${p.links.github}" target="_blank" rel="noreferrer">Code</a>`:''}
-            ${p.page ? `<a href="${p.page}">Read more</a>` : ""}
-            ${p.links.demo? `<a href="${p.links.demo}" target="_blank" rel="noreferrer">Demo</a>`:''}
-            ${p.links.report? `<a href="${p.links.report}" target="_blank" rel="noreferrer">Docs</a>`:''}
-          </div>
-        `;
-        grid.appendChild(card);
-      });
+  // Always fetch from the repo root so it works on subpages too
+  // IMPORTANT: repo name is case-sensitive — matches "SethFriend2003"
+  const PROJECTS_JSON_URL = '/SethFriend2003/data/projects.json';
+
+  function render(){
+    grid.innerHTML = '';
+    const items = state.data.filter(p => !state.tag || (p.tags || []).includes(state.tag));
+    if (!items.length) {
+      grid.innerHTML = '<p style="color:#888">No projects found.</p>';
+      return;
     }
-
-    function renderFilters(){
-      const all = new Set();
-      state.data.forEach(p => p.tags.forEach(t => all.add(t)));
-      const tags = ['all', ...Array.from(all).sort()];
-      filtersEl.innerHTML = '';
-      tags.forEach(tag => {
-        const btn = document.createElement('button');
-        btn.className = 'filter' + ((state.tag===null && tag==='all') || (state.tag===tag) ? ' active': '');
-        btn.textContent = tag;
-        btn.onclick = () => { state.tag = (tag==='all')? null : tag; renderFilters(); render(); };
-        filtersEl.appendChild(btn);
-      });
+    for (const p of items) {
+      const card = document.createElement('article');
+      card.className = 'card';
+      card.innerHTML = `
+        <h3>${p.title}</h3>
+        <div class="meta">${p.when} · ${p.role || ''}</div>
+        <p>${p.summary}</p>
+        <div class="chips">${(p.tags || []).map(t => `<span class="chip">${t}</span>`).join('')}</div>
+        <div class="project-links" style="margin-top:10px;">
+          ${p.page ? `<a href="${p.page}">Read more</a>` : ''}
+          ${p.links?.github ? `<a href="${p.links.github}" target="_blank" rel="noreferrer">Code</a>` : ''}
+          ${p.links?.demo ? `<a href="${p.links.demo}" target="_blank" rel="noreferrer">Demo</a>` : ''}
+          ${p.links?.report ? `<a href="${p.links.report}" target="_blank" rel="noreferrer">Docs</a>` : ''}
+        </div>
+      `;
+      grid.appendChild(card);
     }
+  }
 
-    fetch('data/projects.json').then(r => r.json()).then(d => {
-      state.data = d.projects;
-      renderFilters();
-      render();
+  function renderFilters(){
+    const all = new Set();
+    state.data.forEach(p => (p.tags || []).forEach(t => all.add(t)));
+    const tags = ['all', ...Array.from(all).sort()];
+    filtersEl.innerHTML = tags.map(tag =>
+      `<button class="filter${(state.tag===null && tag==='all') || state.tag===tag ? ' active' : ''}" data-t="${tag}">${tag}</button>`
+    ).join('');
+    filtersEl.onclick = (e) => {
+      if (!e.target.matches('button')) return;
+      const t = e.target.getAttribute('data-t');
+      state.tag = (t === 'all') ? null : t;
+      renderFilters(); render();
+    };
+  }
+
+  // Fetch with helpful errors
+  fetch(PROJECTS_JSON_URL)
+    .then(r => {
+      if (!r.ok) throw new Error(`Fetch failed ${r.status} ${r.statusText}`);
+      return r.json();
+    })
+    .then(d => { state.data = d.projects || []; renderFilters(); render(); })
+    .catch(err => {
+      console.error('Could not load projects.json from', PROJECTS_JSON_URL, err);
+      grid.innerHTML = '<p style="color:#e66">Could not load projects. Check that <code>data/projects.json</code> exists.</p>';
     });
 
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-</body>
-</html>
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
