@@ -25,12 +25,12 @@
       "summary": "Competed In Texas Robo Rumble twice leading a team to create a top competing verticle spinner.",
       "tags": ["leadership", "electrical", "operations"],
       "links": { "github": "", "demo": "", "report": "" },
-      "page": "battlebot.html"
+      "page": "projects/battlebot.html"
     },
     {
       "title": "2×4 Macropad · RP2040",
       "when": "2024",
-      "role": "Firmware & CAD",
+      "role": "Firmware · CAD",
       "summary": "Custom Pico-based macropad with CircuitPython and wire-matrix.",
       "tags": ["embedded", "electrical", "cad"],
       "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
@@ -43,7 +43,16 @@
       "summary": "Created a servo steered glider as part of an electronics competition test run. Uses ESP32 Now to communicate and a wii joystick.",
       "tags": ["leadership", "electrical", "mechanical"],
       "links": { "github": "", "demo": "", "report": "" },
-      "page": "glider.html"
+      "page": "projects/glider.html"
+    },
+    {
+      "title": "Electric Skateboard",
+      "when": "2024",
+      "role": "CAD · Electronics",
+      "summary": "Created custom drop down electric skateboard with better portability and stability than any commercial board.",
+      "tags": [ "electrical", "cad"],
+      "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
+      "page": "projects/board.html"
     }
   ]
 }
