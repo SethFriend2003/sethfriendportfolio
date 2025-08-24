@@ -4,7 +4,7 @@
       "title": "Bipedal Robot (10× BLDC + ODrive)",
       "when": "2025",
       "role": "Controls & Mechatronics",
-      "summary": "7 kg biped with BLDC actuators and torque control; explored RL gait policies.",
+      "summary": "Designed and created 8kg bipedal robot; Working on walking in simulation.",
       "tags": ["robotics", "controls", "embedded", "mechanical"],
       "links": { "github": "https://github.com/yourusername/bipedal-robot", "demo": "", "report": "" },
       "page": "projects/bipedal-robot.html"
@@ -21,8 +21,8 @@
     {
       "title": "Battle Bots",
       "when": "2024 & 2025",
-      "role": "Team Lead · Electromechanical",
-      "summary": "Led wiring/commissioning of robotic arms; safety checks and throughput testing under deadlines.",
+      "role": "Team Lead · Chassi Design",
+      "summary": "Competed In Texas Robo Rumble twice leading a team to create a top competing verticle spinner.",
       "tags": ["leadership", "electrical", "operations"],
       "links": { "github": "", "demo": "", "report": "" },
       "page": "battlebot.html"
@@ -31,7 +31,7 @@
       "title": "2×4 Macropad · RP2040",
       "when": "2024",
       "role": "Firmware & CAD",
-      "summary": "Custom Pico-based macropad with CircuitPython and wire-matrix scanning.",
+      "summary": "Custom Pico-based macropad with CircuitPython and wire-matrix.",
       "tags": ["embedded", "electrical", "cad"],
       "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
       "page": "projects/macropad.html"
