@@ -35,11 +35,13 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
 }
 
 .photo-row {
-  display: flex;               /* makes images go side by side */
-  justify-content: center;     /* centers them on the page */
-  gap: 15px;                   /* space between images */
-  flex-wrap: wrap;             /* wrap onto next line if screen is too small */
-  margin: 20px 0;
+  max-width: 1200px;   /* allow wider than text */
+  margin: 0 auto;      /* still center the row */
+  padding: 0 10px;     /* small side padding */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .project-photo {
