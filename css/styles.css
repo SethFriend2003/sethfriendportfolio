@@ -41,7 +41,7 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   display: flex;
   justify-content: center;
   gap: 20px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .project-photo {
@@ -99,3 +99,9 @@ section, header, footer, main {
   margin: 0 auto;      /* centers the block */
   padding: 0 20px;     /* adds space on the sides */
 }
+@media (max-width: 900px) {
+  .photo-row { flex-wrap: wrap; }
+  .project-photo { max-width: 100%; }
+}
+}
+
