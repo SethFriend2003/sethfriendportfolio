@@ -47,3 +47,47 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   height: auto;                /* keeps correct aspect ratio */
   border-radius: 12px;         /* optional: rounded corners */
 }
+
+/* Lightbox overlay */
+.lightbox {
+  display: none;              /* hidden by default */
+  position: fixed;
+  z-index: 9999;              /* on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  align-items: center;
+  justify-content: center;
+}
+
+/* Big image inside */
+.lightbox-content {
+  max-width: 90%;
+  max-height: 80%;
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Caption text */
+#lightbox-caption {
+  text-align: center;
+  color: #ccc;
+  padding: 10px;
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #bbb;
+}
