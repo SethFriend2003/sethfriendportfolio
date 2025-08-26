@@ -1,1 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Battle Bots! — Seth Friend</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="lightbox-caption"></div>
+</div>
 
+<body>
+  <header><a href="../index.html">← Back to Portfolio</a></header>
+  <main>
+    <h1>Battle Bots!</h1>
+    <p><strong>Date:</strong> 2024 & 2025 · <strong>Role:</strong> Firmware & CAD</p>
+
+
+</div>
+           <div class="photo-row">
+  <img src="../pictures/IMG_4857.jpg" alt="Final Version" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/IMG_4858.jpg" alt="Protype" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/IMG_4859.jpg" alt="Early Prototype" class="project-photo" onclick="openLightbox(this)">
+</div>
+    <!-- <img class="responsive" src="../assets/handheld.jpg" alt="Handheld console"> -->
+    <h2>Overview</h2>
+    <p>
+      I designed the handheld to be like a DS because it was one of my favorite consoles growing up. I built it around a Raspberry Pi Zero with a custom 3D-printed enclosure and buttons. I used GPIONext to make the rasberrypi zero register the buttons soldered directly onto it as an external controller. The game console is also called TIW 1 because it was designed as a display piece for TIW, the makerspace where I work. I am very happy with this project as the buttons have a nice tactile feel and all aspects worked as I hoped. If I were to spend more time on it, I would add an audio jack as it would be nice to have audio.
+    </p>
+    <h3>Buttons</h3>
+
+      <p>
+    While I had some issues getting the screen to work (I had to modify the boot code) and getting GPIOnext to work reliably, the main problems came from lining up the buttons. One major downside of free wiring the buttons on perfboad is that there was no easy way for me line up where the slots in the case would line up with the electric buttons. This meant many, many prototypes. In the future I would use a custom pcb, or a 3D scanner to avoid so many prints and small changes. 
+  </p>
+      
+    </p>
+  </main>
+</body>
+</html>
+
+<script>
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("lightbox-caption").innerText = img.alt;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
