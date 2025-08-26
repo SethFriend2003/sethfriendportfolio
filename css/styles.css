@@ -35,14 +35,15 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
 }
 
 .photo-row {
-  display: flex;              /* line them up horizontally */
-  justify-content: center;    /* center the row */
-  gap: 20px;                  /* space between images */
-  flex-wrap: wrap;            /* wrap onto next line if too many */
+  display: flex;               /* makes images go side by side */
+  justify-content: center;     /* centers them on the page */
+  gap: 15px;                   /* space between images */
+  flex-wrap: wrap;             /* wrap onto next line if screen is too small */
   margin: 20px 0;
 }
 
 .project-photo {
-  max-width: 200px;           /* limit size */
-  border-radius: 12px;        /* optional rounded corners */
+  max-width: 250px;            /* shrink images so they fit nicely */
+  height: auto;                /* keeps correct aspect ratio */
+  border-radius: 12px;         /* optional: rounded corners */
 }
