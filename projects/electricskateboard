@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Electric Skateboard</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="lightbox-caption"></div>
+</div>
+
+<body>
+  <header><a href="../index.html">← Back to Portfolio</a></header>
+  <main>
+    <h1>Electric Skateboard</h1>
+    <p><strong>Date:</strong> 2024 · <strong>Role:</strong> Electronics & CAD</p>
+
+
+</div>
+           <div class="photo-row">
+  <img src="../pictures/IMG_4857.jpg" alt="Final Version" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/IMG_4858.jpg" alt="Protype" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/IMG_4859.jpg" alt="Early Prototype" class="project-photo" onclick="openLightbox(this)">
+</div>
+    <!-- <img class="responsive" src="../assets/handheld.jpg" alt="Handheld console"> -->
+    <h2>Overview</h2>
+    <p>
+      I have designed multiple electric skateboards, leading to my final and favorite design. Using a combination of off the shelf parts, Facebook Marketplace, and Solidworks, I created my ideal electric skateboard. My board is made from a short cut wide skateboard, with Loaded Longboard Zee brakets attached to the front and back. It uses 100mm hub motors and has custom TPU enclosures with Butyl tape wrapped around and silicon dipped ESC for waterproofing. The board sits low to the ground so it feels much safer at high speeds, and is easy to foot brake and push when the battery or remote is dead. It also has a custom made handle so I can drag it instead of carrying it, if I would like. It has a somewhat short wheelbase, but that was on purpose to improve the turning radius and portability. The end result is a board I use everyday to get to class, and one I would choose over any other electric skateboard.
+    </p>
+      
+    </p>
+  </main>
+</body>
+</html>
+
+<script>
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("lightbox-caption").innerText = img.alt;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
