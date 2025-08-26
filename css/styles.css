@@ -33,3 +33,16 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   .btn.secondary{border:1px solid #ddd}
   .card{border-color:#eee}
 }
+
+.photo-row {
+  display: flex;              /* line them up horizontally */
+  justify-content: center;    /* center the row */
+  gap: 20px;                  /* space between images */
+  flex-wrap: wrap;            /* wrap onto next line if too many */
+  margin: 20px 0;
+}
+
+.project-photo {
+  max-width: 200px;           /* limit size */
+  border-radius: 12px;        /* optional rounded corners */
+}
