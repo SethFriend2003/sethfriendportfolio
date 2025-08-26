@@ -35,7 +35,7 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
 }
 
 .photo-row {
-  max-width: 1200px;   /* allow wider than text */
+  max-width: 1400px;   /* allow wider than text */
   margin: 0 auto;      /* still center the row */
   padding: 0 10px;     /* small side padding */
   display: flex;
