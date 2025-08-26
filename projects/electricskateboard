@@ -21,9 +21,8 @@
 
 </div>
            <div class="photo-row">
-  <img src="../pictures/IMG_4857.jpg" alt="Final Version" class="project-photo" onclick="openLightbox(this)">
-  <img src="../pictures/IMG_4858.jpg" alt="Protype" class="project-photo" onclick="openLightbox(this)">
-  <img src="../pictures/IMG_4859.jpg" alt="Early Prototype" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/IMG_4879.jpg" alt="Final Version" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/IMG_4880.jpg" alt="Protype" class="project-photo" onclick="openLightbox(this)">
 </div>
     <!-- <img class="responsive" src="../assets/handheld.jpg" alt="Handheld console"> -->
     <h2>Overview</h2>
