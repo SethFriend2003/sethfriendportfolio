@@ -44,7 +44,7 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   flex-wrap: nowrap;
 }
 
-.project-photo2 {
+.project-photo {
   max-width: 350px;            /* shrink images so they fit nicely */
   height: auto;                /* keeps correct aspect ratio */
   border-radius: 12px;         /* optional: rounded corners */
