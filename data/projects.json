@@ -52,7 +52,7 @@
       "summary": "Created custom drop down electric skateboard with better portability and stability than any commercial board.",
       "tags": [ "electrical", "cad"],
       "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
-      "page": "projects/board.html"
+      "page":"projects/electricskateboard.html"
     }
   ]
 }
