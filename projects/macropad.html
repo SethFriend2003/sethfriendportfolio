@@ -1,1 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Macropad — Seth Friend</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="lightbox-caption"></div>
+</div>
 
+<body>
+  <header><a href="../index.html">← Back to Portfolio</a></header>
+  <main>
+    <h1>The Macropad</h1>
+    <p><strong>Date:</strong> 2024 · <strong>Role:</strong> Firmware & CAD</p>
+
+
+</div>
+           <div class="photo-row">
+  <img src="../pictures/IMG_4857.jpg" alt="Final Version" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/IMG_4858.jpg" alt="Protype" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/IMG_4859.jpg" alt="Early Prototype" class="project-photo" onclick="openLightbox(this)">
+</div>
+    <!-- <img class="responsive" src="../assets/handheld.jpg" alt="Handheld console"> -->
+    <h2>Overview</h2>
+    <p>
+     In this project I madea 2 x 4 Macropad using a rasberry pi pico, with custom resin key caps and 3D printed enclosure. While unecessary for such a small macropad, I wired the buttons in a matrix formation to use less GPIO pins, as this would be necessary for a full keyboard. 
+    </p>
+    <h3>Trials and Tribulations</h3>
+
+      <p>
+    The main troubles of this project came from making keycaps that fit. I made this as part of a new hire project for my work, and we were provided with cheap switches with untraditional stems. These stems were hard to design around, and required very tight tolerances, which is why I printed the keycaps using SLA. 
+    </p>
+  </main>
+</body>
+</html>
+
+<script>
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("lightbox-caption").innerText = img.alt;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
