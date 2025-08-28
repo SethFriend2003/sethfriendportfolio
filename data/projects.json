@@ -7,7 +7,7 @@
       "summary": "Designed and created 8kg bipedal robot; Working on walking in simulation.",
       "tags": ["robotics", "controls", "embedded", "mechanical"],
       "links": { "github": "https://github.com/yourusername/bipedal-robot", "demo": "", "report": "" },
-      "image": "pictures/IMG_4857.jpg",
+      "image": "pictures/IMG_4894.jpg",
       "page": "projects/bipedal-robot.html"
     },
     {
@@ -47,7 +47,7 @@
       "summary": "Created a servo steered glider as part of an electronics competition test run. Uses ESP32 Now to communicate and a wii joystick.",
       "tags": ["leadership", "electrical", "mechanical"],
       "links": { "github": "", "demo": "", "report": "" },
-      "image": "pictures/IMG_4857.jpg",
+      "image": "pictures/IMG_4893.jpg",
       "page": "projects/glider.html"
     },
     {
