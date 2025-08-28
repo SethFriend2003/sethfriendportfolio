@@ -34,6 +34,18 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   .card{border-color:#eee}
 }
 
+<style>
+  .project-card {
+    display: grid; grid-template-columns: 96px 1fr; gap: 12px;
+    border: 1px solid #e5e7eb; border-radius: 16px; padding: 14px;
+    transition: box-shadow .2s ease;
+  }
+  .project-card:hover { box-shadow: 0 8px 20px rgba(0,0,0,.06); }
+  .project-thumb { width:96px; height:96px; border-radius:12px; object-fit:cover; background:#f3f4f6; }
+  .project-title { font-weight:600; margin:0 0 4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .project-summary { color:#4b5563; margin:0; }
+</style>
+
 .photo-row {
   max-width: 1400px;   /* allow wider than text */
   margin: 0 auto;      /* still center the row */
