@@ -114,5 +114,36 @@ section, header, footer, main {
   .photo-row { flex-wrap: wrap; }
   .project-photo { max-width: 100%; }
 }
+<style>
+/* full-bleed section that breaks out of any page max-width */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+/* responsive 2-up grid that collapses on small screens */
+.video-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  padding: 10px 0;
+}
+
+/* keep a clean 16:9 box for each video */
+.video {
+  position: relative;
+  width: min(560px, 100%);
+  aspect-ratio: 16 / 9;    /* modern browsers */
+}
+
+/* make iframe fill its box (overrides any global iframe width rules) */
+.video iframe {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+</style>
 }
 
