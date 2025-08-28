@@ -57,13 +57,14 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   border-radius: 12px;         /* optional: rounded corners */
 }
 .project-photo2 {
+
   max-width: 350px;
   width: auto;               /* ensure width isn’t forced to 100% by a global rule */
   height: auto ;   /* override any height attribute/rule */
           /* avoids baseline weirdness */
   border-radius: 12px;
   object-fit: contain;       /* or 'cover' if you’re cropping into fixed boxes */
-  border-radius: 12px;
+  border-radius: 12px !important;
   overflow: hidden;  /* clip child image to the rounded corner */
 }
 
