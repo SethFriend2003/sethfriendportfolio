@@ -60,7 +60,7 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   max-width: 350px;
   width: auto;               /* ensure width isn’t forced to 100% by a global rule */
   height: auto !important;   /* override any height attribute/rule */
-  display: block;            /* avoids baseline weirdness */
+          /* avoids baseline weirdness */
   border-radius: 12px;
   object-fit: contain;       /* or 'cover' if you’re cropping into fixed boxes */
 }
