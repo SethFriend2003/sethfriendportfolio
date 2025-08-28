@@ -25,7 +25,7 @@
       "when": "2024 & 2025",
       "role": "Team Lead · Chassi Design",
       "summary": "Competed In Texas Robo Rumble twice leading a team to create a top competing verticle spinner.",
-      "tags": ["leadership", "electrical", "operations"],
+      "tags": ["leadership", "electrical", "cad"],
       "links": { "github": "", "demo": "", "report": "" },
       "image": "pictures/IMG_4875.jpg",
       "page": "projects/battlebot.html"
@@ -45,7 +45,7 @@
       "when": "2025",
       "role": "Electrical · Design",
       "summary": "Created a servo steered glider as part of an electronics competition test run. Uses ESP32 Now to communicate and a wii joystick.",
-      "tags": ["leadership", "electrical", "mechanical"],
+      "tags": ["electrical", "mechanical"],
       "links": { "github": "", "demo": "", "report": "" },
       "image": "pictures/IMG_4893.jpg",
       "page": "projects/glider.html"
