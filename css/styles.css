@@ -35,8 +35,9 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
 }
 .card img {
   display: block;
-  max-height: 180px;   /* keeps them from being huge */
-  object-fit: cover;   /* crop instead of stretch */
+  max-width: 250px;   /* keeps them from being huge */
+  height: auto;   /* crop instead of stretch */
+  border-radius: 12px;
 }
 .photo-row {
   max-width: 1400px;   /* allow wider than text */
