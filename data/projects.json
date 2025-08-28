@@ -7,6 +7,7 @@
       "summary": "Designed and created 8kg bipedal robot; Working on walking in simulation.",
       "tags": ["robotics", "controls", "embedded", "mechanical"],
       "links": { "github": "https://github.com/yourusername/bipedal-robot", "demo": "", "report": "" },
+      "image": "pictures/IMG_4857.jpg",
       "page": "projects/bipedal-robot.html"
     },
     {
@@ -26,6 +27,7 @@
       "summary": "Competed In Texas Robo Rumble twice leading a team to create a top competing verticle spinner.",
       "tags": ["leadership", "electrical", "operations"],
       "links": { "github": "", "demo": "", "report": "" },
+      "image": "pictures/IMG_4875.jpg",
       "page": "projects/battlebot.html"
     },
     {
@@ -35,6 +37,7 @@
       "summary": "Custom Pico-based macropad with CircuitPython and wire-matrix.",
       "tags": ["embedded", "electrical", "cad"],
       "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
+      "image": "pictures/IMG_4886.jpg",
       "page": "projects/macropad.html"
     },
         {
@@ -44,6 +47,7 @@
       "summary": "Created a servo steered glider as part of an electronics competition test run. Uses ESP32 Now to communicate and a wii joystick.",
       "tags": ["leadership", "electrical", "mechanical"],
       "links": { "github": "", "demo": "", "report": "" },
+      "image": "pictures/IMG_4857.jpg",
       "page": "projects/glider.html"
     },
     {
@@ -53,6 +57,7 @@
       "summary": "Created custom drop down electric skateboard with better portability and stability than any commercial board.",
       "tags": [ "electrical", "cad"],
       "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
+      "image": "pictures/IMG_4879.jpg",
       "page":"projects/electricskateboard.html"
     }
   ]
