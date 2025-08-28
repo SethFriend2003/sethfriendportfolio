@@ -63,6 +63,8 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
           /* avoids baseline weirdness */
   border-radius: 12px;
   object-fit: contain;       /* or 'cover' if you’re cropping into fixed boxes */
+  border-radius: 12px;
+  overflow: hidden;  /* clip child image to the rounded corner */
 }
 
 /* Lightbox overlay */
