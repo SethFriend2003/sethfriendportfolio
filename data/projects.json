@@ -6,7 +6,7 @@
       "role": "Controls & Mechatronics",
       "summary": "Designed and created 8kg bipedal robot; Working on walking in simulation.",
       "tags": ["robotics", "controls", "embedded", "mechanical"],
-      "links": { "github": "https://github.com/yourusername/bipedal-robot", "demo": "", "report": "" },
+      "links": { "github": "", "demo": "", "report": "" },
       "image": "pictures/IMG_4894.jpg",
       "page": "projects/bipedal-robot.html"
     },
@@ -16,7 +16,7 @@
       "role": "Firmware & CAD",
       "summary": "DS-inspired console using Raspberry Pi Zero and custom 3D-printed parts.",
       "tags": ["cad", "electrical"],
-      "links": { "github": "https://github.com/yourusername/handheld-console", "demo": "", "report": "" },
+      "links": { "github": "", "demo": "", "report": "" },
       "page": "projects/handheld-console.html",
       "image": "pictures/IMG_4857.jpg"
     },
@@ -36,7 +36,7 @@
       "role": "Firmware · CAD",
       "summary": "Custom Pico-based macropad with CircuitPython and wire-matrix.",
       "tags": ["embedded", "electrical", "cad"],
-      "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
+      "links": { "github": "", "demo": "", "report": "" },
       "image": "pictures/IMG_4886.jpg",
       "page": "projects/macropad.html"
     },
@@ -56,7 +56,7 @@
       "role": "CAD · Electronics",
       "summary": "Created custom drop down electric skateboard with better portability and stability than any commercial board.",
       "tags": [ "electrical", "cad"],
-      "links": { "github": "https://github.com/yourusername/macropad", "demo": "", "report": "" },
+      "links": { "github": "", "demo": "", "report": "" },
       "image": "pictures/IMG_4879.jpg",
       "page":"projects/electricskateboard.html"
     }
