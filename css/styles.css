@@ -48,6 +48,7 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   justify-content: center;
   gap: 20px;
   flex-wrap: nowrap;
+  align-items: flex-start;   /* <— add this */
 }
 
 .project-photo {
@@ -56,9 +57,12 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   border-radius: 12px;         /* optional: rounded corners */
 }
 .project-photo2 {
-  max-width: 400px;            /* shrink images so they fit nicely */
-  height: auto;                /* keeps correct aspect ratio */
-  border-radius: 12px;         /* optional: rounded corners */
+  max-width: 350px;
+  width: auto;               /* ensure width isn’t forced to 100% by a global rule */
+  height: auto !important;   /* override any height attribute/rule */
+  display: block;            /* avoids baseline weirdness */
+  border-radius: 12px;
+  object-fit: contain;       /* or 'cover' if you’re cropping into fixed boxes */
 }
 
 /* Lightbox overlay */
