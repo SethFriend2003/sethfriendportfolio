@@ -36,7 +36,7 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
 .card img {
   display: block;
   max-width: 250px;   /* keeps them from being huge */
-  height: auto;   /* crop instead of stretch */
+  height: 350px;   /* crop instead of stretch */
   border-radius: 12px;
 }
 .photo-row {
