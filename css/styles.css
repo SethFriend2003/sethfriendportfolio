@@ -38,6 +38,7 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   max-width: 250px;   /* keeps them from being huge */
   height: 250px;   /* crop instead of stretch */
   border-radius: 12px;
+  object-fit: cover;
 }
 .photo-row {
   max-width: 1400px;   /* allow wider than text */
