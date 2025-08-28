@@ -16,7 +16,7 @@
       "summary": "DS-inspired console using Raspberry Pi Zero and custom 3D-printed parts.",
       "tags": ["cad", "electrical"],
       "links": { "github": "https://github.com/yourusername/handheld-console", "demo": "", "report": "" },
-      "page": "projects/handheld-console.html"
+      "page": "projects/handheld-console.html",
       "image": "pictures/IMG_4857.jpg",
        "imageAlt": "TIW 1"
     },
