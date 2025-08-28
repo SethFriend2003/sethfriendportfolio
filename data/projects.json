@@ -17,8 +17,7 @@
       "tags": ["cad", "electrical"],
       "links": { "github": "https://github.com/yourusername/handheld-console", "demo": "", "report": "" },
       "page": "projects/handheld-console.html",
-      "image": "pictures/IMG_4857.jpg",
-       "imageAlt": "TIW 1"
+      "image": "pictures/IMG_4857.jpg"
     },
     {
       "title": "Battle Bots",
