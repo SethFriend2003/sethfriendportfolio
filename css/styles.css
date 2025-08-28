@@ -56,7 +56,7 @@ img.responsive{max-width:100%;height:auto;border-radius:12px}
   border-radius: 12px;         /* optional: rounded corners */
 }
 .project-photo2 {
-  max-width: 350px;            /* shrink images so they fit nicely */
+  max-width: 400px;            /* shrink images so they fit nicely */
   height: auto;                /* keeps correct aspect ratio */
   border-radius: 12px;         /* optional: rounded corners */
 }
