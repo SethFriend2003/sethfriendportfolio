@@ -137,42 +137,5 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 
-  <script>
-  document.addEventListener('DOMContentLoaded', renderProjects);
-
-  async function renderProjects() {
-    const res = await fetch('data/projects.json', { cache: 'no-store' });
-    const projects = await res.json();
-
-    const grid = document.getElementById('projects');
-    if (!grid) return;
-    grid.innerHTML = '';
-
-    const FALLBACK = 'pictures/placeholder.png';
-
-    projects.forEach(p => {
-      const a = document.createElement('a');
-      a.href = p.href;
-      a.className = 'project-card';
-
-      const img = document.createElement('img');
-      img.className = 'project-thumb';
-      img.alt = p.imageAlt || p.title;
-      img.loading = 'lazy';
-      img.src = p.image || FALLBACK;
-      img.onerror = () => { img.src = FALLBACK; };
-
-      const textWrap = document.createElement('div');
-      const h3 = document.createElement('h3'); h3.className = 'project-title'; h3.textContent = p.title;
-      const pEl = document.createElement('p'); pEl.className = 'project-summary'; pEl.textContent = p.summary;
-
-      textWrap.appendChild(h3);
-      textWrap.appendChild(pEl);
-      a.appendChild(img);
-      a.appendChild(textWrap);
-      grid.appendChild(a);
-    });
-  }
-</script>
 </body>
 </html>
