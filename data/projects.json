@@ -5,7 +5,7 @@
       "when": "2025",
       "role": "Controls & Mechatronics",
       "summary": "Designed and created 8kg bipedal robot; Working on walking in simulation.",
-      "tags": ["robotics", "controls", "embedded", "mechanical"],
+      "tags": ["robotics", "controls", "embedded", "mechanical", "cad"],
       "links": { "github": "", "demo": "", "report": "" },
       "image": "pictures/IMG_4894.jpg",
       "page": "projects/bipedal-robot.html"
