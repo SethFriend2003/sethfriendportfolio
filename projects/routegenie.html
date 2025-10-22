@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Humanoid Robot — Seth Friend</title>
+  <title>Routegenie — Seth Friend</title>
   <link rel="stylesheet" href="../css/styles.css">
 </head>
   <div id="lightbox" class="lightbox" onclick="closeLightbox()">
@@ -15,29 +15,25 @@
 <body>
   <header><a href="../index.html">← Back to Portfolio</a></header>
   <main>
-    <h1>Humanoid Robot</h1>
-    <p><strong>Date:</strong> 2025 · <strong>Role:</strong> Mechatronics & Design</p>
+    <h1>Routegenie</h1>
+    <p><strong>Date:</strong> 2025 · <strong>Role:</strong> Software and Machine Learning</p>
 
 
 </div>
            <div class="photo-row">
-  <img src="../pictures/IMG_5304.jpg" alt="First Build" class="project-photo" onclick="openLightbox(this)">
-  <img src="../pictures/Screenshot 2025-08-28 161355.png" alt="CAD" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/Screenshot 2025-10-22 110450.png" alt="Final Product" class="project-photo" onclick="openLightbox(this)">
+  <img src="../pictures/Screenshot 2025-08-28 161355.png" alt="Flow Chart" class="project-photo" onclick="openLightbox(this)">
 </div>
     <!-- <img class="responsive" src="../assets/handheld.jpg" alt="Handheld console"> -->
     <h2>Overview</h2>
     <p>
-     I spent the last 4 weeks of my summer, after working at Amazon, trying to make a bipedal walking robot. The design takes strong inspiration from the robot used in VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters by Disney. I worked with a friend I met while working at Amazon, and we set out to make our own robot. I designed the legs, electronic system, and torso, while he designed the arms. All limbs have 5 DoF, with BLDC motors in the legs and servos in the arms. The body is made of a combination of aluminum plates, PETG, and TPU. The legs each have 5 Gim6010-8 motors with a built-in 9:1 gear reduction and ODrive clone driver. The motors are placed in the joints, just as Disney does for their bipedal robots. Currently, both arms and one leg have been assembled.
+     Slightly different entry on my portfolio compared to my other projects. This was what I made as apart of HackTx 2025. A very big first software project, but I think it went quite well so I wanted to share it here. The product was to make a website that you could use to auto generate routes for the Kilter Board and then send via bluetooth to the board. We used Gemini 2.5- Flash to generate the routes as a json file. I linked our demo video here and our slideshow.
     <h3>Next Steps</h3>
 
       <p>
-   This is still an ongoing project. Our next steps are to set up the CAN bus for the leg and then get the leg moving via a Teensy 4.1. Once that is done, we will assemble the whole robot and move on to simulating it in Isaac Sim to walk. Our robot has one IMU sensor and will use an 8GB Raspberry Pi 5 as its main processor. The current plan is to run the robot through ROS 2 Jazzy on Ubuntu 24.04.
+    I will be continue working on this 24 hour hackathon project in spirit by helping implement features for Climbest, a more refined and further progressed version of what my team and I made during the event.
   </p>
-<h2>Progress!</h2>
-          <p>
-       The CAN bus for one leg has been finished and smooth movement with the leg has been achieved. The robot has also been successfully simulated in PyBullet. The next steps is to now simulate the robot in Issac Sim and finish assembling the whole robot (aka wire the 2nd leg). 
-      
-    </p>
+
      <div class="video-row">
     <div class="video">
       <iframe src="https://youtube.com/embed/x8Zw8PzQm84" allowfullscreen></iframe>
