@@ -10,6 +10,16 @@
       "image": "pictures/IMG_5303.jpg",
       "page": "projects/bipedal-robot.html"
     },
+            {
+      "title": "RouteGenie",
+      "when": "2025",
+      "role": "Software",
+      "summary": "Website to AI generate Kilter Board routes and send them via bluetooth",
+      "tags": ["machine learning", "software"],
+      "links": { "github": "", "demo": "", "report": "" },
+      "page": "projects/routegenie.html",
+      "image": "pictures/IMG_4857.jpg"
+    },
     {
       "title": "TIW 1 — Handheld Game Console",
       "when": "2024–2025",
@@ -30,6 +40,7 @@
       "image": "pictures/IMG_4875.jpg",
       "page": "projects/battlebot.html"
     },
+
     {
       "title": "2×4 Macropad · RP2040",
       "when": "2024",
