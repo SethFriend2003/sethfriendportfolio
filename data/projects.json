@@ -40,6 +40,16 @@
       "image": "pictures/IMG_4875.jpg",
       "page": "projects/battlebot.html"
     },
+            {
+      "title": "Servo Controlled Glider",
+      "when": "2025",
+      "role": "Electrical · Design",
+      "summary": "Created a servo steered glider as part of an electronics competition test run. Uses ESP32 Now to communicate and a wii joystick.",
+      "tags": ["electrical", "mechanical"],
+      "links": { "github": "", "demo": "", "report": "" },
+      "image": "pictures/IMG_4893.jpg",
+      "page": "projects/glider.html"
+    },
 
     {
       "title": "2×4 Macropad · RP2040",
@@ -51,16 +61,7 @@
       "image": "pictures/IMG_4886.jpg",
       "page": "projects/macropad.html"
     },
-        {
-      "title": "Servo Controlled Glider",
-      "when": "2025",
-      "role": "Electrical · Design",
-      "summary": "Created a servo steered glider as part of an electronics competition test run. Uses ESP32 Now to communicate and a wii joystick.",
-      "tags": ["electrical", "mechanical"],
-      "links": { "github": "", "demo": "", "report": "" },
-      "image": "pictures/IMG_4893.jpg",
-      "page": "projects/glider.html"
-    },
+
     {
       "title": "Electric Skateboard",
       "when": "2024",
