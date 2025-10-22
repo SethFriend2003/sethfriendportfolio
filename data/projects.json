@@ -11,7 +11,7 @@
       "page": "projects/bipedal-robot.html"
     },
             {
-      "title": "RouteGenie",
+      "title": "Route Genie",
       "when": "2025",
       "role": "Software",
       "summary": "Website to AI generate Kilter Board routes and send them via bluetooth",
