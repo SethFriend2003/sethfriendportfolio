@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "title": "Bipedal Robot (10× BLDC + ODrive)",
+      "title": "Humanoid Robot (10× BLDC + ODrive)",
       "when": "2025",
       "role": "Controls & Mechatronics",
       "summary": "Designed and created 8kg bipedal robot; Working on walking in simulation.",
