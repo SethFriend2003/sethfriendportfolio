@@ -27,12 +27,12 @@
     <!-- <img class="responsive" src="../assets/handheld.jpg" alt="Handheld console"> -->
     <h2>Overview</h2>
     <p>
-     I spent the last 4 weeks of my summer, after working at Amazon, trying to make a bipedal walking robot. The design takes strong inspiration from the robot used in VMP: Versatile Motion Priors for Robustly Tracking Motion on Physical Characters by Disney. I worked with a friend I met while working at Amazon, and we set out to make our own robot. I designed the legs, electronic system, and torso, while he designed the arms. All limbs have 5 DoF, with BLDC motors in the legs and servos in the arms. The body is made of a combination of aluminum plates, PETG, and TPU. The legs each have 5 Gim6010-8 motors with a built-in 9:1 gear reduction and ODrive clone driver. The motors are placed in the joints, just as Disney does for their bipedal robots and are connected all togther via a CAN bus. The full physical robot has been built and simulated in Isaac Sim.
-    <h3>Next Steps</h3>
+Architected and built a custom 7 kg bipedal humanoid robot from the ground up, drawing inspiration from Disney’s Versatile Motion Priors (VMP) research. Working alongside a former Amazon colleague, I led the development of the lower-body mechanics, overall electronics architecture, and torso design, while also coordinating the integration of the upper-body kinematics.
 
-      <p>
-   This is still an ongoing project. I have sucessfully trained the robot to stand in simulation, tuned all the motors, and set up the rasberry pi to control the robot over CAN. I am currently working on getting the motors completely set up and the model running on the pi.
-  </p>
+For the hardware, I designed a 20 DoF system with 5 DoF per leg, 4 DoF per arm, and 2 DoF for the head. The lower body is powered by GIM6010-8 BLDC motors with integrated 9:1 gear reductions, controlled through ODrive controllers. The actuators are mounted directly at the joints to mirror the Disney bipedal architecture. The chassis combines machined aluminum plates, PETG, and TPU, and all motor controllers communicate with the main compute unit over a CAN bus network.
+
+On the software and controls side, the robot is fully assembled in hardware and has been replicated in NVIDIA Isaac Sim as a digital twin. I trained a reinforcement learning policy for standing stabilization in simulation and am currently working through sim-to-real transfer. I have tuned the PID of all the leg motors, and my next steps are to complete the ROS 2 and Python control stack, and deploy the trained model to the onboard Raspberry Pi.
+    <p>
 
      <div class="video-row">
     <div class="video">
