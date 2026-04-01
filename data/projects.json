@@ -4,7 +4,7 @@
       "title": "Humanoid Robot (10× BLDC + ODrive)",
       "when": "2025",
       "role": "Controls & Mechatronics",
-      "summary": "Designed and created 8kg bipedal robot; Working on walking in simulation.",
+      "summary": "Designed and created 7kg bipedal robot; Working on walking in simulation.",
       "tags": ["robotics", "controls", "embedded", "mechanical", "cad", "software"],
       "links": { "github": "", "demo": "", "report": "" },
       "image": "pictures/IMG_5399.jpeg",
