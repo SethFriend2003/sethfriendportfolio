@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seth Friend</title>
+  <meta name="description" content="ECE junior at UT Austin — building robots, embedded systems, and whatever's next.">
+  <meta property="og:title" content="Seth Friend">
+  <meta property="og:description" content="ECE junior at UT Austin — robotics, firmware, and the occasional game console.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles-v2.css">
+  <link rel="icon" href="favicon.png">
+</head>
+<body>
+
+<!-- scroll progress indicator -->
+<div id="read-progress"></div>
+
+<!-- custom cursor (desktop only) -->
+<div id="cursor-dot"></div>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">seth friend</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#work">work</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+      <a href="seths_fall_2026_resume.pdf" target="_blank" class="nav-resume">resume ↗</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<header class="hero-section" id="top">
+
+  <!--
+    PROFILE PHOTO
+    ─────────────
+    Replace the initials below with your headshot:
+      <img src="pictures/headshot.jpg" alt="Seth Friend">
+    Drop your photo into the /pictures/ folder first.
+  -->
+  <div class="profile-circle">
+    <div class="profile-initials">SF</div>
+  </div>
+
+  <h1 class="hero-name reveal">seth friend</h1>
+  <p class="hero-tagline reveal">
+    ECE junior at UT Austin. i build robots, embedded systems, and
+    whatever interesting problem is in front of me.
+    based in austin and always making something.
+  </p>
+  <div class="hero-links reveal">
+    <a href="mailto:friend.seth03@gmail.com">email</a>
+    <a href="https://www.linkedin.com/in/seth-friend2003" target="_blank" rel="noreferrer">linkedin</a>
+    <a href="https://github.com/SethFriend2003" target="_blank" rel="noreferrer">github</a>
+    <a href="seths_fall_2026_resume.pdf" target="_blank">résumé ↗</a>
+  </div>
+  <span class="hero-scroll-hint">↓</span>
+</header>
+
+
+<!-- ══════════════════════════════════════
+     WORK
+     ══════════════════════════════════════ -->
+<section class="site-section" id="work">
+  <div class="col">
+    <h2 class="section-label reveal">work</h2>
+
+    <!-- ── Amazon ── -->
+    <div class="work-entry reveal">
+      <div class="company-name">Amazon Robotics</div>
+      <div class="work-meta">Robotics Deployment · Summer 2024 · Various U.S. fulfillment centers</div>
+      <ul class="work-bullets">
+        <li>Led on-site deployment of robotic arm systems at Amazon fulfillment facilities, working directly with hardware in production environments.</li>
+        <li>Worked with ROS 2 and motion planning systems, debugging and tuning arm behavior under live warehouse conditions.</li>
+        <li>Interfaced with operations teams on-site to identify failure modes and iterate on deployment configurations.</li>
+        <li>Gained hands-on experience with industrial embedded systems and the constraints of real-world robotics outside of a lab setting.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--
+    AMAZON PHOTOS
+    ─────────────
+    Replace each placeholder with an <img> tag pointing to your photo.
+    Example:
+      <figure>
+        <img src="pictures/amazon-facility.jpg" alt="Amazon fulfillment center">
+        <figcaption>fulfillment center, summer 2024</figcaption>
+      </figure>
+  -->
+  <div class="photo-row cols-3 reveal">
+    <figure>
+      <div class="photo-placeholder">
+        <span class="ph-icon">+</span>
+        <span class="ph-label">add photo<br>amazon / facility</span>
+      </div>
+      <figcaption>add caption here</figcaption>
+    </figure>
+    <figure>
+      <div class="photo-placeholder">
+        <span class="ph-icon">+</span>
+        <span class="ph-label">add photo<br>robot arm / work</span>
+      </div>
+      <figcaption>add caption here</figcaption>
+    </figure>
+    <figure>
+      <div class="photo-placeholder">
+        <span class="ph-icon">+</span>
+        <span class="ph-label">add photo<br>team / moment</span>
+      </div>
+      <figcaption>add caption here</figcaption>
+    </figure>
+  </div>
+
+  <!-- ── TIW Makerspace ── -->
+  <div class="col">
+    <div class="work-entry reveal" style="margin-top: 72px;">
+      <div class="company-name">TIW Makerspace — UT Austin</div>
+      <div class="work-meta">Lab Assistant · 2024–Present · Austin, TX</div>
+      <ul class="work-bullets">
+        <li>Work at TIW, one of UT Austin's student-run makerspaces, supporting members with electronics, 3D printing, and fabrication projects.</li>
+        <li>Used the space to build several personal projects including the TIW 1 handheld console (designed specifically as a display piece for the space) and the macropad new-hire project.</li>
+        <li>Gained access to SLA resin printers, laser cutters, CNC tools, and electronics benches that made tighter-tolerance builds possible.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!--
+    TIW PHOTOS
+    ──────────
+    Replace placeholders with your makerspace photos.
+    Two existing project photos are included — add a third if you have one.
+  -->
+  <div class="photo-row cols-3 reveal">
+    <figure>
+      <img src="pictures/IMG_4886.jpg" alt="Macropad built at TIW" loading="lazy">
+      <figcaption>macropad — TIW new-hire project, 2024</figcaption>
+    </figure>
+    <figure>
+      <img src="pictures/IMG_4857.jpg" alt="Handheld console built at TIW" loading="lazy">
+      <figcaption>TIW 1 handheld console, 2024</figcaption>
+    </figure>
+    <figure>
+      <!--
+        REPLACE: add a photo of you in the TIW makerspace or at your bench.
+        <img src="pictures/tiw-bench.jpg" alt="at the TIW bench">
+      -->
+      <div class="photo-placeholder">
+        <span class="ph-icon">+</span>
+        <span class="ph-label">add photo<br>you at TIW</span>
+      </div>
+      <figcaption>add caption here</figcaption>
+    </figure>
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════
+     PROJECTS
+     ══════════════════════════════════════ -->
+<section class="site-section" id="projects">
+  <div class="col">
+    <h2 class="section-label reveal">projects</h2>
+  </div>
+
+  <!-- ── 01 Humanoid Robot ── -->
+  <div class="project-entry reveal">
+    <div class="col">
+      <div class="project-number">01</div>
+      <h3 class="project-title">Humanoid Robot</h3>
+      <div class="project-meta">2025 · Controls & Mechatronics</div>
+      <p class="project-body">
+        Architected and built a custom 7 kg bipedal humanoid robot from the ground up, drawing inspiration from Disney's Versatile Motion Priors (VMP) research. Working alongside a former Amazon colleague, I led the lower-body mechanics, simulation environment, training policy, software, electronics architecture, and torso design.
+      </p>
+      <p class="project-body">
+        The hardware is a 20 DoF system — 5 DoF per leg, 4 per arm, 2 for the head — powered by GIM6010-8 BLDC motors with integrated 9:1 gear reductions through ODrive controllers. All motor controllers communicate over CAN bus. The chassis is machined aluminum, PETG, and TPU.
+      </p>
+      <p class="project-body">
+        On the software side, I've replicated the robot in NVIDIA Isaac Sim as a digital twin, trained an RL policy for standing stabilization, and am currently working through sim-to-real transfer. PID-tuned all leg motors. Next: finishing the ROS 2 control stack and deploying the policy to the onboard Raspberry Pi.
+      </p>
+    </div>
+
+    <div class="project-photos">
+      <div class="photo-row cols-2 reveal">
+        <figure>
+          <img src="pictures/IMG_5398.jpeg" alt="Humanoid robot hardware" loading="lazy">
+          <figcaption>hardware assembly, 2025</figcaption>
+        </figure>
+        <figure>
+          <img src="pictures/Screenshot 2025-08-28 161355.png" alt="Humanoid robot CAD model" loading="lazy">
+          <figcaption>CAD model in simulation</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="video-wrap reveal">
+        <iframe src="https://youtube.com/embed/x8Zw8PzQm84" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="tag-row reveal">
+        <span class="tag">robotics</span>
+        <span class="tag">controls</span>
+        <span class="tag">embedded</span>
+        <span class="tag">mechanical</span>
+        <span class="tag">cad</span>
+        <span class="tag">software</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 02 Battle Bots ── -->
+  <div class="project-entry reveal">
+    <div class="col">
+      <div class="project-number">02</div>
+      <h3 class="project-title">Battle Bots</h3>
+      <div class="project-meta">2024 & 2025 · Team Lead · Chassis Design</div>
+      <p class="project-body">
+        Competed in Texas Robo Rumble twice as team lead, each year building a vertical spinner. Year two was significantly better — I designed both the chassis and electrical system, chose TPU throughout for energy absorption, and added an extra layer of armor over year one. We made it to the quarterfinals.
+      </p>
+      <h4 class="project-subhead">the weapon</h4>
+      <p class="project-body">
+        Our downfall was the motor mount — the barrel of the motor spinning inside a bearing pressed into a TPU upright. Worked in testing, failed against real robots when the upright flexed under impact. If I rebuilt it, I'd use a more rigid material for the upright. An honest lesson in the gap between lab testing and competition.
+      </p>
+    </div>
+
+    <div class="project-photos">
+      <div class="photo-row cols-3 reveal">
+        <figure>
+          <img src="pictures/IMG_4873.jpg" alt="Battle bot final version" loading="lazy">
+          <figcaption>final version, 2025</figcaption>
+        </figure>
+        <figure>
+          <img src="pictures/IMG_4874.jpg" alt="Battle bot prototype" loading="lazy">
+          <figcaption>prototype</figcaption>
+        </figure>
+        <figure>
+          <img src="pictures/IMG_4875.jpg" alt="Battle bot early prototype" loading="lazy">
+          <figcaption>early prototype, 2024</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="tag-row reveal">
+        <span class="tag">robotics</span>
+        <span class="tag">leadership</span>
+        <span class="tag">electrical</span>
+        <span class="tag">cad</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 03 Route Genie ── -->
+  <div class="project-entry reveal">
+    <div class="col">
+      <div class="project-number">03</div>
+      <h3 class="project-title">Route Genie</h3>
+      <div class="project-meta">2025 · Software & ML · HackTx 2025</div>
+      <p class="project-body">
+        A website that auto-generates custom climbing routes for the Kilter Board and sends them via Bluetooth to the board. Built in 24 hours at HackTx 2025. We used Gemini 2.5-Flash to generate routes as JSON — a bigger first software project for me, and one I'm glad I did.
+      </p>
+      <h4 class="project-subhead">next steps</h4>
+      <p class="project-body">
+        Continuing the spirit of this project by contributing to Climbest — a more refined, further-developed version of what we built during the hackathon.
+      </p>
+    </div>
+
+    <div class="project-photos">
+      <div class="photo-row cols-2 reveal">
+        <figure>
+          <img src="pictures/Screenshot 2025-10-22 110450.png" alt="Route Genie UI" loading="lazy">
+          <figcaption>route genie UI</figcaption>
+        </figure>
+        <figure>
+          <img src="pictures/Screenshot 2025-10-22 171909.png" alt="Route Genie flow chart" loading="lazy">
+          <figcaption>system flow</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="embed-wrap reveal">
+        <iframe src="https://docs.google.com/presentation/d/1YeYl9UaGMAvwg0dwhiBs3SBFnYvbkBJHDzGaB42jmns/embed"
+          frameborder="0" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-wrap reveal">
+        <iframe src="https://www.youtube.com/embed/Xqakte3wSvs?si=i5Ksz537fow_hPX1"
+          allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="tag-row reveal">
+        <span class="tag">software</span>
+        <span class="tag">machine learning</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 04 Servo Glider ── -->
+  <div class="project-entry reveal">
+    <div class="col">
+      <div class="project-number">04</div>
+      <h3 class="project-title">Servo Controlled Glider</h3>
+      <div class="project-meta">2025 · Electrical · Firmware</div>
+      <p class="project-body">
+        A remote-controlled foam glider that steers via two underwing servos, controlled wirelessly by a pair of ESP32s over ESP-NOW. No propellers allowed by school policy — which meant I had to learn airfoil design and wireless microcontroller communication at the same time. Won first place in the staff competition.
+      </p>
+      <h4 class="project-subhead">the plane's downfall</h4>
+      <p class="project-body">
+        The downfall was weight and lift. A propeller-less servo glider is a hard beginner competition, and while mine did the best, nobody really "glided" — so the student-run version of the competition was cancelled. Still proud of it.
+      </p>
+    </div>
+
+    <div class="project-photos">
+      <div class="photo-row cols-1 reveal">
+        <figure>
+          <img src="pictures/IMG_4893.jpg" alt="Servo controlled glider" loading="lazy">
+          <figcaption>the glider, 2025</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="video-wrap reveal">
+        <iframe src="https://youtube.com/embed/-zgdTwg2qII" allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="video-wrap reveal">
+        <iframe src="https://www.youtube.com/embed/qF_RAYVmXFo?si=HZsbLljQQhyKJP8a"
+          allowfullscreen loading="lazy"></iframe>
+      </div>
+      <div class="tag-row reveal">
+        <span class="tag">electrical</span>
+        <span class="tag">embedded</span>
+        <span class="tag">mechanical</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 05 Handheld Console ── -->
+  <div class="project-entry reveal">
+    <div class="col">
+      <div class="project-number">05</div>
+      <h3 class="project-title">TIW 1 — Handheld Console</h3>
+      <div class="project-meta">2024–2025 · Firmware · CAD</div>
+      <p class="project-body">
+        Designed a handheld game console modeled after the Nintendo DS — one of my favorite consoles growing up. Built around a Raspberry Pi Zero with a custom 3D-printed enclosure and perfboard buttons. GPIONext handles input registration. Named TIW 1 because it was built as a display piece for the TIW makerspace.
+      </p>
+      <h4 class="project-subhead">buttons</h4>
+      <p class="project-body">
+        Free-wiring buttons on perfboard means no easy way to guarantee alignment with slots in the enclosure — which led to many, many print iterations. Getting the screen working required boot code modifications. Next time: a custom PCB or a 3D scanner to lock in the geometry before printing.
+      </p>
+    </div>
+
+    <div class="project-photos">
+      <div class="photo-row cols-3 reveal">
+        <figure>
+          <img src="pictures/IMG_4857.jpg" alt="Handheld console final" loading="lazy">
+          <figcaption>final version</figcaption>
+        </figure>
+        <figure>
+          <img src="pictures/IMG_4858.jpg" alt="Handheld console prototype" loading="lazy">
+          <figcaption>prototype</figcaption>
+        </figure>
+        <figure>
+          <img src="pictures/IMG_4859.jpg" alt="Handheld console early prototype" loading="lazy">
+          <figcaption>early prototype</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="tag-row reveal">
+        <span class="tag">embedded</span>
+        <span class="tag">cad</span>
+        <span class="tag">electrical</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 06 Electric Skateboard ── -->
+  <div class="project-entry reveal">
+    <div class="col">
+      <div class="project-number">06</div>
+      <h3 class="project-title">Electric Skateboard</h3>
+      <div class="project-meta">2024 · CAD · Electronics</div>
+      <p class="project-body">
+        I've designed multiple electric skateboards. This is the final and favorite version — a short, wide drop-down deck with Loaded Longboard Zee brackets, 100 mm hub motors, custom TPU enclosures, and a silicone-dipped ESC for waterproofing. Designed in SolidWorks, assembled from a mix of off-the-shelf and custom parts.
+      </p>
+      <p class="project-body">
+        Low deck, short wheelbase, custom carry handle. Rides lower than any commercial board I've tried, which makes it feel safer at speed and easier to foot-brake. I ride it to class every day.
+      </p>
+    </div>
+
+    <div class="project-photos">
+      <div class="photo-row cols-2 reveal">
+        <figure>
+          <img src="pictures/IMG_4879.jpg" alt="Electric skateboard final" loading="lazy">
+          <figcaption>final build, 2024</figcaption>
+        </figure>
+        <figure>
+          <img src="pictures/IMG_4880.jpg" alt="Electric skateboard detail" loading="lazy">
+          <figcaption>enclosure detail</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="tag-row reveal">
+        <span class="tag">electrical</span>
+        <span class="tag">cad</span>
+        <span class="tag">mechanical</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── 07 Macropad ── -->
+  <div class="project-entry reveal">
+    <div class="col">
+      <div class="project-number">07</div>
+      <h3 class="project-title">2×4 Macropad</h3>
+      <div class="project-meta">2024 · Firmware · CAD</div>
+      <p class="project-body">
+        A 2×4 macropad built with a Raspberry Pi Pico, CircuitPython, and custom resin keycaps in a 3D-printed enclosure. I wired the buttons in a matrix formation — not necessary for 8 keys, but good practice for a full keyboard layout.
+      </p>
+      <h4 class="project-subhead">trials and tribulations</h4>
+      <p class="project-body">
+        The main challenge was making keycaps that fit. This was a new-hire project at TIW, and the provided switches had non-standard stems with tight tolerances. I ended up printing the keycaps in SLA resin instead of FDM to get the precision needed.
+      </p>
+    </div>
+
+    <div class="project-photos">
+      <div class="photo-row cols-2 reveal">
+        <figure>
+          <img src="pictures/IMG_4886.jpg" alt="Macropad final" loading="lazy">
+          <figcaption>final build, 2024</figcaption>
+        </figure>
+        <figure>
+          <img src="pictures/IMG_4885.jpg" alt="Macropad prototype" loading="lazy">
+          <figcaption>prototype</figcaption>
+        </figure>
+      </div>
+      <div class="photo-row cols-1 reveal" style="margin-top: 10px; max-width: min(460px, calc(100vw - 40px));">
+        <figure>
+          <img src="pictures/unnamed.png" alt="Macropad wiring diagram" loading="lazy">
+          <figcaption>button matrix wiring</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="tag-row reveal">
+        <span class="tag">embedded</span>
+        <span class="tag">electrical</span>
+        <span class="tag">cad</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════
+     CONTACT
+     ══════════════════════════════════════ -->
+<section class="site-section" id="contact" style="border-bottom: none;">
+  <div class="col reveal">
+    <h2 class="section-label">contact</h2>
+    <p style="font-size:17px; color: var(--muted); max-width: 480px; line-height: 1.75; margin-bottom: 40px;">
+      I'm always open to interesting projects, internships, or conversations about robots.
+    </p>
+    <div style="display: flex; flex-direction: column; gap: 0;">
+      <a href="mailto:friend.seth03@gmail.com"
+         style="display:flex; justify-content:space-between; align-items:center;
+                padding: 24px 0; border-bottom: 1px solid var(--divider);
+                border-top: 1px solid var(--divider);
+                font-family: var(--serif); font-size: clamp(18px,2.5vw,26px);
+                transition: opacity 0.2s;"
+         onmouseover="this.style.opacity='.45'" onmouseout="this.style.opacity='1'">
+        <span>friend.seth03@gmail.com</span><span style="color:var(--muted)">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/seth-friend2003" target="_blank" rel="noreferrer"
+         style="display:flex; justify-content:space-between; align-items:center;
+                padding: 24px 0; border-bottom: 1px solid var(--divider);
+                font-family: var(--serif); font-size: clamp(18px,2.5vw,26px);
+                transition: opacity 0.2s;"
+         onmouseover="this.style.opacity='.45'" onmouseout="this.style.opacity='1'">
+        <span>linkedin</span><span style="color:var(--muted)">↗</span>
+      </a>
+      <a href="https://github.com/SethFriend2003" target="_blank" rel="noreferrer"
+         style="display:flex; justify-content:space-between; align-items:center;
+                padding: 24px 0; border-bottom: 1px solid var(--divider);
+                font-family: var(--serif); font-size: clamp(18px,2.5vw,26px);
+                transition: opacity 0.2s;"
+         onmouseover="this.style.opacity='.45'" onmouseout="this.style.opacity='1'">
+        <span>github</span><span style="color:var(--muted)">↗</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="site-footer">
+    <span>© <span id="year"></span> Seth Friend</span>
+    <div class="footer-links">
+      <a href="#work">work</a>
+      <a href="#projects">projects</a>
+      <a href="seths_fall_2026_resume.pdf" target="_blank">résumé ↗</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ── LIGHTBOX ── -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lb-close" aria-label="Close image">✕</button>
+  <img id="lb-img" src="" alt="">
+  <div id="lb-caption"></div>
+</div>
+
+
+<script>
+/* ── YEAR ── */
+document.getElementById('year').textContent = new Date().getFullYear();
+
+/* ── SCROLL PROGRESS ── */
+(function () {
+  const bar = document.getElementById('read-progress');
+  window.addEventListener('scroll', () => {
+    const total = document.documentElement.scrollHeight - window.innerHeight;
+    bar.style.width = (total > 0 ? (window.scrollY / total) * 100 : 0) + '%';
+  }, { passive: true });
+})();
+
+/* ── NAV: frosted on scroll + active section ── */
+(function () {
+  const nav    = document.getElementById('nav');
+  const toggle = document.getElementById('navToggle');
+  const links  = document.getElementById('navLinks');
+  const navAs  = links.querySelectorAll('a[href^="#"]');
+
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  }, { passive: true });
+
+  /* active section highlight */
+  const sections = Array.from(document.querySelectorAll('section[id], header[id]'));
+  const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      navAs.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id);
+      });
+    });
+  }, { threshold: 0.35 });
+  sections.forEach(s => sectionObserver.observe(s));
+
+  /* mobile nav toggle */
+  toggle.addEventListener('click', () => {
+    const open = links.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+  });
+  links.addEventListener('click', e => {
+    if (e.target.tagName === 'A') {
+      links.classList.remove('open');
+      toggle.classList.remove('open');
+    }
+  });
+})();
+
+/* ── CUSTOM CURSOR ── */
+(function () {
+  const dot = document.getElementById('cursor-dot');
+  /* only activate on devices that support hover */
+  if (!window.matchMedia('(hover: hover)').matches) return;
+
+  let mx = -100, my = -100;
+
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX; my = e.clientY;
+    dot.style.left = mx + 'px';
+    dot.style.top  = my + 'px';
+    dot.classList.add('on');
+  });
+
+  document.addEventListener('mouseleave', () => dot.classList.remove('on'));
+
+  document.addEventListener('mouseover', e => {
+    if (e.target.tagName === 'IMG') {
+      dot.classList.add('over-img');
+      dot.classList.remove('over-link');
+    } else if (e.target.closest('a, button')) {
+      dot.classList.add('over-link');
+      dot.classList.remove('over-img');
+    } else {
+      dot.classList.remove('over-img', 'over-link');
+    }
+  });
+})();
+
+/* ── SCROLL REVEAL ── */
+(function () {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.07 });
+
+  document.querySelectorAll('.reveal').forEach((el, i) => {
+    /* stagger siblings within the same parent */
+    const siblings = Array.from(el.parentElement.querySelectorAll('.reveal'));
+    const idx = siblings.indexOf(el);
+    if (idx > 0) el.style.transitionDelay = (idx * 0.07) + 's';
+    observer.observe(el);
+  });
+})();
+
+/* ── LIGHTBOX ── */
+(function () {
+  const lb      = document.getElementById('lightbox');
+  const lbImg   = document.getElementById('lb-img');
+  const lbCap   = document.getElementById('lb-caption');
+  const lbClose = document.getElementById('lb-close');
+
+  function open(src, alt, caption) {
+    lbImg.src = src;
+    lbImg.alt = alt;
+    lbCap.textContent = caption || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function close() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+    /* wait for fade before clearing src */
+    setTimeout(() => { lbImg.src = ''; }, 300);
+  }
+
+  /* attach to all real (non-placeholder) project/work photos */
+  document.querySelectorAll('.photo-row figure img').forEach(img => {
+    img.addEventListener('click', () => {
+      const cap = img.closest('figure').querySelector('figcaption');
+      open(img.src, img.alt, cap ? cap.textContent : '');
+    });
+  });
+
+  lbClose.addEventListener('click', close);
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
+})();
+</script>
+
+</body>
+</html>

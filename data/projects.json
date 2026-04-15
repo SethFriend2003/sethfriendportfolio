@@ -1,76 +1,89 @@
 {
   "projects": [
     {
-      "title": "Humanoid Robot (10× BLDC + ODrive)",
+      "id": "humanoid-robot",
+      "title": "Humanoid Robot",
       "when": "2025",
       "role": "Controls & Mechatronics",
-      "summary": "Designed and created 7kg bipedal robot; Working on walking in simulation.",
+      "hook": "7 kg bipedal from scratch — BLDC motors, ODrive controllers, and a trained RL policy.",
+      "summary": "Architected a 7 kg, 20 DoF bipedal robot with GIM6010-8 BLDC motors, ODrive controllers, CAN bus communication, and an NVIDIA Isaac Sim digital twin. Currently working through sim-to-real transfer.",
       "tags": ["robotics", "controls", "embedded", "mechanical", "cad", "software"],
-      "links": { "github": "", "demo": "", "report": "" },
       "image": "pictures/IMG_5399.jpeg",
-      "page": "projects/bipedal-robot.html"
-    },
-            {
-      "title": "Route Genie",
-      "when": "2025",
-      "role": "Software",
-      "summary": "Website to AI generate Kilter Board routes and send them via bluetooth",
-      "tags": ["machine learning", "software"],
-      "links": { "github": "", "demo": "", "report": "" },
-      "page": "projects/routegenie.html",
-      "image": "pictures/Screenshot 2025-10-22 110450.png"
+      "images": ["pictures/IMG_5398.jpeg", "pictures/Screenshot 2025-08-28 161355.png"],
+      "videos": ["https://youtube.com/embed/x8Zw8PzQm84"]
     },
     {
-      "title": "TIW 1 — Handheld Game Console",
-      "when": "2024–2025",
-      "role": "Firmware & CAD",
-      "summary": "DS-inspired console using Raspberry Pi Zero and custom 3D-printed parts.",
-      "tags": ["cad", "electrical"],
-      "links": { "github": "", "demo": "", "report": "" },
-      "page": "projects/handheld-console.html",
-      "image": "pictures/IMG_4857.jpg"
-    },
-    {
+      "id": "battle-bots",
       "title": "Battle Bots",
       "when": "2024 & 2025",
-      "role": "Team Lead · Chassi Design",
-      "summary": "Competed In Texas Robo Rumble twice leading a team to create a top competing verticle spinner.",
-      "tags": ["leadership", "electrical", "cad", "robotics"],
-      "links": { "github": "", "demo": "", "report": "" },
+      "role": "Team Lead · Chassis Design",
+      "hook": "Led a team to the quarterfinals of Texas Robo Rumble with a vertical spinner.",
+      "summary": "Competed in Texas Robo Rumble twice as team lead, designing both the chassis and electrical system for a vertical spinner. Made it to the quarterfinals in year two.",
+      "tags": ["robotics", "leadership", "electrical", "cad"],
       "image": "pictures/IMG_4875.jpg",
-      "page": "projects/battlebot.html"
+      "images": ["pictures/IMG_4873.jpg", "pictures/IMG_4874.jpg", "pictures/IMG_4875.jpg"],
+      "videos": []
     },
-            {
+    {
+      "id": "route-genie",
+      "title": "Route Genie",
+      "when": "2025",
+      "role": "Software & ML",
+      "hook": "AI-generated Kilter Board routes sent over Bluetooth. Built in 24 hours at HackTx 2025.",
+      "summary": "Website that uses Gemini 2.5-Flash to generate custom climbing routes for the Kilter Board and send them via Bluetooth. Built in 24 hours at HackTx 2025.",
+      "tags": ["software", "machine learning"],
+      "image": "pictures/Screenshot 2025-10-22 110450.png",
+      "images": ["pictures/Screenshot 2025-10-22 110450.png", "pictures/Screenshot 2025-10-22 171909.png"],
+      "videos": ["https://www.youtube.com/embed/Xqakte3wSvs?si=i5Ksz537fow_hPX1"],
+      "slides": "https://docs.google.com/presentation/d/1YeYl9UaGMAvwg0dwhiBs3SBFnYvbkBJHDzGaB42jmns/embed"
+    },
+    {
+      "id": "glider",
       "title": "Servo Controlled Glider",
       "when": "2025",
-      "role": "Electrical · Design",
-      "summary": "Created a servo steered glider as part of an electronics competition test run. Uses ESP32 Now to communicate and a wii joystick.",
-      "tags": ["electrical", "mechanical"],
-      "links": { "github": "", "demo": "", "report": "" },
+      "role": "Electrical · Firmware",
+      "hook": "Remote-controlled foam glider steered by underwing servos. No propellers — won 1st place.",
+      "summary": "Built a remote-controlled foam glider using two ESP32s (ESP-NOW wireless) and underwing servos for steering. No propellers allowed by school policy. Won 1st place in the staff competition.",
+      "tags": ["electrical", "embedded", "mechanical"],
       "image": "pictures/IMG_4893.jpg",
-      "page": "projects/glider.html"
+      "images": ["pictures/IMG_4893.jpg"],
+      "videos": ["https://youtube.com/embed/-zgdTwg2qII", "https://www.youtube.com/embed/qF_RAYVmXFo?si=HZsbLljQQhyKJP8a"]
     },
-
     {
-      "title": "2×4 Macropad · RP2040",
-      "when": "2024",
+      "id": "handheld-console",
+      "title": "TIW 1 — Handheld Console",
+      "when": "2024–2025",
       "role": "Firmware · CAD",
-      "summary": "Custom Pico-based macropad with CircuitPython and wire-matrix.",
-      "tags": ["embedded", "electrical", "cad"],
-      "links": { "github": "", "demo": "", "report": "" },
-      "image": "pictures/IMG_4886.jpg",
-      "page": "projects/macropad.html"
+      "hook": "DS-inspired handheld built on Raspberry Pi Zero with custom 3D-printed enclosure and buttons.",
+      "summary": "Designed a Nintendo DS-inspired handheld game console around a Raspberry Pi Zero with custom 3D-printed enclosure, perfboard buttons, and GPIONext for input handling.",
+      "tags": ["embedded", "cad", "electrical"],
+      "image": "pictures/IMG_4857.jpg",
+      "images": ["pictures/IMG_4857.jpg", "pictures/IMG_4858.jpg", "pictures/IMG_4859.jpg"],
+      "videos": []
     },
-
     {
+      "id": "electric-skateboard",
       "title": "Electric Skateboard",
       "when": "2024",
       "role": "CAD · Electronics",
-      "summary": "Created custom drop down electric skateboard with better portability and stability than any commercial board.",
-      "tags": [ "electrical", "cad"],
-      "links": { "github": "", "demo": "", "report": "" },
+      "hook": "The electric board I designed and ride to class every day.",
+      "summary": "Custom drop-down electric skateboard with 100 mm hub motors, Loaded Longboard Zee brackets, TPU enclosures, and silicone-dipped ESC. Designed for portability, low deck height, and daily use.",
+      "tags": ["electrical", "cad", "mechanical"],
       "image": "pictures/IMG_4879.jpg",
-      "page":"projects/electricskateboard.html"
+      "images": ["pictures/IMG_4879.jpg", "pictures/IMG_4880.jpg"],
+      "videos": []
+    },
+    {
+      "id": "macropad",
+      "title": "2×4 Macropad",
+      "when": "2024",
+      "role": "Firmware · CAD",
+      "hook": "Custom RP2040 macropad with wire-matrix wiring, resin keycaps, and 3D-printed enclosure.",
+      "summary": "Built a 2×4 macropad with a Raspberry Pi Pico, custom resin keycaps, and wire-matrix button wiring. SLA-printed keycaps required to fit non-standard switch stems.",
+      "tags": ["embedded", "electrical", "cad"],
+      "image": "pictures/IMG_4886.jpg",
+      "images": ["pictures/IMG_4886.jpg", "pictures/IMG_4885.jpg", "pictures/unnamed.png"],
+      "videos": []
     }
   ]
 }

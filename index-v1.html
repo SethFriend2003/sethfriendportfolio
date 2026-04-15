@@ -19,12 +19,12 @@
 <!-- ── NAV ── -->
 <nav id="nav">
   <div class="nav-inner">
-    <a href="#" class="nav-brand">Seth Friend</a>
+    <a href="#" class="nav-brand">seth friend</a>
     <div class="nav-links" id="navLinks">
-      <a href="#projects">Projects</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-      <a href="seths_fall_2026_resume.pdf" target="_blank" class="nav-resume">Resume ↗</a>
+      <a href="#projects">projects</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+      <a href="seths_fall_2026_resume.pdf" target="_blank" class="nav-resume">resume ↗</a>
     </div>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
@@ -37,14 +37,14 @@
   <div class="hero-inner">
     <div class="hero-text">
       <h1 class="hero-headline">
-        I build robots,<br>
+        i build robots,<br>
         embedded systems,<br>
         <em>and whatever's next.</em>
       </h1>
       <p class="hero-sub">ECE junior at UT Austin — robotics, firmware, and the occasional game console.</p>
       <div class="hero-cta">
-        <a href="#projects" class="btn-primary">See work</a>
-        <a href="#contact" class="btn-secondary">Get in touch</a>
+        <a href="#projects" class="btn-primary">see work</a>
+        <a href="#contact" class="btn-secondary">get in touch</a>
       </div>
     </div>
     <div class="hero-image-wrap">
@@ -56,7 +56,7 @@
 <!-- ── PROJECTS ── -->
 <section id="projects">
   <div class="section-inner">
-    <h2 class="section-title reveal">Projects</h2>
+    <h2 class="section-title reveal">projects</h2>
     <div class="filters reveal" id="filters"></div>
     <div id="featured-wrap"></div>
     <div class="project-grid" id="project-grid"></div>
@@ -66,13 +66,13 @@
 <!-- ── ABOUT ── -->
 <section class="about-section" id="about">
   <div class="about-inner reveal">
-    <h2 class="section-title">About</h2>
+    <h2 class="section-title">about</h2>
     <div class="about-body">
       <p>I'm a junior at UT Austin studying electrical and computer engineering, focused on robotics and embedded systems. I like problems that sit at the intersection of math, code, and physical things that move.</p>
       <p>Outside of school I've worked on robotic arm deployments at Amazon facilities. I'm currently working on sim-to-real transfer for a 7 kg bipedal humanoid robot — fully assembled in hardware, running a trained RL policy in simulation, working through getting it onto the actual robot.</p>
       <p>Before the university projects, a lot of garage builds and broken prototypes. That's still where most of the fun is.</p>
       <div class="about-tools">
-        <span class="tools-label">Tools & Tech</span>
+        <span class="tools-label">tools & tech</span>
         <span class="tools-list">ROS 2 · NVIDIA Isaac Sim · ODrive · CAN Bus · SolidWorks · FreeCAD · CircuitPython · C/C++ · Python · ESP32 · Raspberry Pi · KiCad</span>
       </div>
     </div>
@@ -82,7 +82,7 @@
 <!-- ── CONTACT ── -->
 <section class="contact-section" id="contact">
   <div class="contact-inner reveal">
-    <h2 class="section-title">Let's Talk</h2>
+    <h2 class="section-title">let's talk</h2>
     <p class="contact-sub">I'm always open to interesting projects, internships, or conversations about robots.</p>
     <div class="contact-links">
       <a href="mailto:friend.seth03@gmail.com" class="contact-link">
@@ -90,11 +90,11 @@
         <span class="link-arrow">↗</span>
       </a>
       <a href="https://www.linkedin.com/in/seth-friend2003" target="_blank" rel="noreferrer" class="contact-link">
-        <span>LinkedIn</span>
+        <span>linkedin</span>
         <span class="link-arrow">↗</span>
       </a>
       <a href="https://github.com/SethFriend2003" target="_blank" rel="noreferrer" class="contact-link">
-        <span>GitHub</span>
+        <span>github</span>
         <span class="link-arrow">↗</span>
       </a>
     </div>
@@ -105,7 +105,7 @@
 <footer>
   <div class="footer-inner">
     <span>© <span id="year"></span> Seth Friend</span>
-    <a href="seths_fall_2026_resume.pdf" target="_blank">Resume ↗</a>
+    <a href="seths_fall_2026_resume.pdf" target="_blank">resume ↗</a>
   </div>
 </footer>
 
@@ -271,7 +271,7 @@ function renderFeatured(projects) {
         <h3 class="card-title">${p.title}</h3>
         <p class="card-summary">${p.summary}</p>
         <div class="card-tags">${(p.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}</div>
-        <button class="btn-text" data-id="${p.id}">View project →</button>
+        <button class="btn-text" data-id="${p.id}">view project →</button>
       </div>
     `;
     wrap.appendChild(el);
