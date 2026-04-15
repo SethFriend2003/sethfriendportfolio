@@ -3,7 +3,7 @@
     {
       "id": "humanoid-robot",
       "title": "Humanoid Robot",
-      "when": "2025",
+      "when": "2025 & 2026",
       "role": "Controls & Mechatronics",
       "hook": "7 kg bipedal from scratch — BLDC motors, ODrive controllers, and a trained RL policy.",
       "summary": "Architected a 7 kg, 20 DoF bipedal robot with GIM6010-8 BLDC motors, ODrive controllers, CAN bus communication, and an NVIDIA Isaac Sim digital twin. Currently working through sim-to-real transfer.",
