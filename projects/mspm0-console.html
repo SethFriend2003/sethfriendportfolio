@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MSPM0 Handheld Console — Seth Friend</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="lightbox-caption"></div>
+</div>
+
+<body>
+  <header><a href="../index.html">← Back to Portfolio</a></header>
+  <main>
+    <h1>MSPM0 Handheld Console</h1>
+    <p><strong>Date:</strong> 2025 · <strong>Role:</strong> Firmware &amp; Embedded C</p>
+
+    <section class="full-bleed">
+      <div class="video-row">
+        <div class="video">
+          <iframe src="https://www.youtube.com/embed/67cFSxDAQuk" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <div class="photo-row">
+      <img src="../pictures/mspm0-console.png" alt="Breadboard handheld console with color LCD wired to the MSPM0 LaunchPad" class="project-photo" onclick="openLightbox(this)">
+    </div>
+
+    <h2>Overview</h2>
+    <p>
+      This was my final project for EE 319K. I built a little handheld game console on a breadboard, programmed entirely in C, running on the MSPM0G3507 board from TI. It plays a simplified version of Space Invaders on a small color LCD. I really enjoyed this one because everything runs bare metal — there is no operating system, so I had to handle the screen, the sound, and the controls directly on the microcontroller.
+    </p>
+
+    <h3>Sound</h3>
+    <p>
+      One of my favorite parts was the audio. Instead of hard-coding beeps, I used Octave to generate an audio file — basically a list of voltage values — and ran those through a DAC to make the sound. It was really cool to see something I made in Octave actually come out of a speaker on my breadboard.
+    </p>
+
+    <h3>Controls</h3>
+    <p>
+      For movement I used a slider hooked up to the ADC. As you slide it, the analog voltage changes, the ADC reads that value, and it moves your ship across the screen. It ended up feeling really natural for a game like this, and a lot better than using buttons.
+    </p>
+  </main>
+</body>
+</html>
+
+<script>
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("lightbox-caption").innerText = img.alt;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+</html>

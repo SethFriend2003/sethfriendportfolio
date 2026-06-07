@@ -62,6 +62,18 @@
       "videos": []
     },
     {
+      "id": "mspm0-console",
+      "title": "MSPM0 Handheld Console",
+      "when": "2025",
+      "role": "Firmware · Embedded C",
+      "hook": "A breadboard handheld game console written in C on TI's MSPM0G3507 microcontroller.",
+      "summary": "Built a handheld game console on a breadboard around TI's MSPM0G3507 microcontroller, written entirely in C. A color LCD, button inputs, and the game logic all run bare-metal on the MSPM0 LaunchPad — the final project for EE 319K.",
+      "tags": ["embedded", "electrical", "software"],
+      "image": "pictures/mspm0-console.png",
+      "images": ["pictures/mspm0-console.png"],
+      "videos": ["https://www.youtube.com/embed/67cFSxDAQuk"]
+    },
+    {
       "id": "electric-skateboard",
       "title": "Electric Skateboard",
       "when": "2024",
