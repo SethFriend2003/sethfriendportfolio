@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SpinZa Pizza Website — Seth Friend</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="lightbox-caption"></div>
+</div>
+
+<body>
+  <header><a href="../index.html">← Back to Portfolio</a></header>
+  <main>
+    <h1>SpinZa Pizza Website</h1>
+    <p><strong>Date:</strong> 2026 · <strong>Role:</strong> Web Design &amp; Development</p>
+
+    <div class="photo-row">
+      <img src="../pictures/spinza-pizza.png" alt="SpinZa Pizza website hero — hand-spun pizza, delivered hot" class="project-photo" onclick="openLightbox(this)">
+    </div>
+
+    <h2>Overview</h2>
+    <p>
+      I built this website for SpinZa, a small pizza company on Gili Trawangan, a little island in Indonesia. They make hand-spun NY-style pizza and wanted a way to bring in more business, so I designed and built them a fast, mobile-first site from scratch to show off their menu and make ordering dead simple.
+    </p>
+
+    <h3>Ordering Through WhatsApp</h3>
+    <p>
+      Almost all food ordering on the island happens over WhatsApp, so instead of building a whole checkout system I leaned into how people there already order. Every "Order" button drops the customer straight into a WhatsApp chat with a pre-filled message asking for their name and location. It keeps things simple for the owners and removes basically all the friction for the customer.
+    </p>
+
+    <h3>Menu &amp; Brand</h3>
+    <p>
+      I built the whole thing around their tagline, "where every slice tells a story," and gave it a bold, hand-spun look to match. The menu is split into tabs — pizza, sandwiches, calzone, and panzerotto — and is driven by a small data file, so they can update items and prices without ever touching the design. Everything is mobile-first, since nearly all of their customers are ordering from a phone.
+    </p>
+  </main>
+</body>
+</html>
+
+<script>
+function openLightbox(img) {
+  document.getElementById("lightbox").style.display = "flex";
+  document.getElementById("lightbox-img").src = img.src;
+  document.getElementById("lightbox-caption").innerText = img.alt;
+}
+
+function closeLightbox() {
+  document.getElementById("lightbox").style.display = "none";
+}
+</script>
+</html>
