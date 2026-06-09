@@ -39,11 +39,11 @@
     },
     {
       "id": "spinza-pizza",
-      "title": "SpinZa Pizza Website",
+      "title": "Spinza Pizza Website",
       "when": "2026",
       "role": "Web Design & Development",
       "hook": "A fast, mobile-first site for a pizza shop in Indonesia — every order button drops you straight into WhatsApp.",
-      "summary": "Designed and built a marketing and menu website for SpinZa, a small pizza company on Gili Trawangan, Indonesia. Mobile-first, WhatsApp-based ordering, a tabbed data-driven menu, and a bold hand-spun brand identity — built to bring them more business.",
+      "summary": "Designed and built a marketing and menu website for Spinza, a small pizza company on Gili Trawangan, Indonesia. Mobile-first, WhatsApp-based ordering, a tabbed data-driven menu, and a bold hand-spun brand identity — built to bring them more business.",
       "tags": ["software", "web"],
       "image": "pictures/spinza-pizza.png",
       "images": ["pictures/spinza-pizza.png"],
