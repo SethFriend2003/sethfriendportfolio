@@ -135,6 +135,25 @@ const MODAL_DETAIL = {
              <p>On the software and controls side, the robot is fully assembled in hardware and has been replicated in NVIDIA Isaac Sim as a digital twin. I trained a reinforcement learning policy for standing stabilization in simulation and am currently working through sim-to-real transfer. I've tuned the PID of all the leg motors, and my next steps are to complete the ROS 2 and Python control stack and deploy the trained model to the onboard Raspberry Pi.</p>`
     }
   ],
+  'whale-tracker': [
+    {
+      h: null,
+      body: `<p>Prediction markets like Polymarket are full of "whales" — wallets making very large or very well-timed bets, sometimes because they know something the market doesn't. I built a system that watches every large trade on Polymarket in real time, figures out which wallets are actually worth paying attention to, and tells me whether the same bet is still available at a good price on Kalshi, the regulated US equivalent.</p>
+             <p>It runs 24/7 on a Mac mini I set up as a home server, with a dashboard I mostly use from my phone and push notifications when something interesting happens.</p>`
+    },
+    {
+      h: 'the pipeline',
+      body: `<p>Under the hood it's an 11-service Dockerized system: a FastAPI backend, Postgres, Redis, a Next.js dashboard, and a set of background workers that ingest trades, score them, and enrich wallets with their on-chain history and identity. Every flagged wallet gets a real track record — when the markets they bet on resolve, the system records whether they won, so over time it learns who's actually good versus who just bets big.</p>`
+    },
+    {
+      h: 'matching markets across venues',
+      body: `<p>The hardest problem was recognizing when Polymarket and Kalshi are asking the same question in different words. I solved it with a multi-stage matcher: vector embeddings narrow thousands of markets down to candidates, structural checks throw out anything with conflicting numbers or dates, an LLM verifies the finalists, and I confirm or reject each proposed match by hand. One wrong match can quietly poison everything downstream, so the human step stays.</p>`
+    },
+    {
+      h: 'keeping myself honest',
+      body: `<p>Every trading idea the system generates runs against a paper-trading ledger first, with worst-case fill prices and exchange fees included — so the results can't flatter themselves. I'm deliberately keeping the strategy internals private while it trades, which is also why the code isn't public. Happy to talk about the engineering side in as much depth as anyone wants.</p>`
+    }
+  ],
   'battle-bots': [
     {
       h: 'overview',

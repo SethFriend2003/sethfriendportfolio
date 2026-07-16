@@ -18,7 +18,7 @@
       "when": "2026",
       "role": "Software Architecture · Data Engineering",
       "hook": "Real-time pipeline that tracks prediction-market whales and maps their bets to equivalent Kalshi markets.",
-      "summary": "An 11-service Dockerized system (FastAPI, Postgres, Redis, Next.js) that ingests large Polymarket trades in real time, builds win/loss track records for thousands of wallets, and uses vector embeddings plus an LLM verifier to match markets across venues — all surfaced on a live self-hosted dashboard with phone alerts. Strategy internals stay private while it trades.",
+      "summary": "A live 11-service system that watches whale bets on Polymarket, builds track records for their wallets, and finds the matching market on Kalshi — self-hosted and running 24/7.",
       "tags": ["software", "machine learning", "web"],
       "image": "pictures/whale-tracker.png",
       "images": ["pictures/whale-tracker.png"],
