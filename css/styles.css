@@ -769,3 +769,36 @@ footer {
   .hero-cta { flex-direction: column; }
   .btn-primary, .btn-secondary { text-align: center; }
 }
+
+/* ─── Image lightbox ─── */
+.modal-gallery img,
+.modal-detail img { cursor: zoom-in; }
+
+#lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4vmin;
+  background: rgba(10, 10, 10, 0.92);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  cursor: zoom-out;
+}
+#lightbox.is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
+#lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+  transform: scale(0.97);
+  transition: transform 0.25s ease;
+}
+#lightbox.is-open img { transform: scale(1); }
