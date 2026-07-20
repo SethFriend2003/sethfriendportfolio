@@ -135,6 +135,24 @@ const MODAL_DETAIL = {
              <p>On the software and controls side, the robot is fully assembled in hardware and has been replicated in NVIDIA Isaac Sim as a digital twin. I trained a reinforcement learning policy for standing stabilization in simulation and am currently working through sim-to-real transfer. I've tuned the PID of all the leg motors, and my next steps are to complete the ROS 2 and Python control stack and deploy the trained model to the onboard Raspberry Pi.</p>`
     }
   ],
+  'interview-coach': [
+    {
+      h: null,
+      body: `<p>Interview prep tools grade your typed answers — but real interviews are spoken, live, and visual. So I built an interviewer you actually talk to: you sign in, pick an interview type, share your screen, and have a spoken conversation with an AI that watches you code, asks follow-ups from a curated question bank, and scores you against rubrics. When you hang up, you get a written debrief with per-question scores, strengths, weaknesses, and a recording of your session.</p>`
+    },
+    {
+      h: 'why there is no server in the middle',
+      body: `<p>Latency is the whole product in a voice conversation, so the browser talks directly to Gemini Live over a WebSocket — mic audio streams up, the interviewer's voice streams back, screen frames go up once per second. No relay server, no audio infrastructure to operate. When the AI needs a question or a rubric, it emits a tool call that the browser forwards to my backend and relays back. The browser never holds a real API credential: it mints a short-lived, single-use token from the backend before every connection.</p>`
+    },
+    {
+      h: 'the boring-but-important half',
+      body: `<p>Everything around the voice loop runs on a serverless backend — auth, sessions, the question bank, scoring, recording uploads via signed URLs, and an LLM summarizer that writes the debrief with structured outputs. Monetization is designed in from day one: a free tier, a $29 question pack, and a capped subscription.</p>`
+    },
+    {
+      h: 'status',
+      body: `<p>Feature-complete and in pre-launch testing. I'm the first user — I'm dogfooding it through my own fall 2026 recruiting season, which is the most honest QA process I could ask for. Demo video coming once it survives me.</p>`
+    }
+  ],
   'whale-tracker': [
     {
       h: null,
