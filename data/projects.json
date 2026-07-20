@@ -18,7 +18,7 @@
       "when": "2026",
       "role": "Full-Stack · Realtime Voice AI",
       "hook": "An AI interviewer you talk to out loud — it sees your screen while you code. In pre-launch testing.",
-      "summary": "A voice-based mock-interview web app: real spoken conversation with an AI interviewer that watches your screen, asks from a curated question bank, and scores you with a written debrief and session recording. Currently in pre-launch testing — I'm the first user.",
+      "summary": "A voice-based mock-interview web app: real spoken conversation with an AI interviewer that watches your screen, asks from a curated question bank, and scores you with a written debrief and session recording. Currently in pre-launch testing.",
       "tags": ["software", "machine learning", "web"],
       "image": "pictures/interview-coach-landing.png",
       "images": ["pictures/interview-coach-landing.png", "pictures/interview-coach-workspace.png"],
