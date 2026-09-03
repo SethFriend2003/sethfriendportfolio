@@ -637,6 +637,19 @@ footer {
   margin-bottom: 20px;
 }
 
+.modal-detail a {
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--divider);
+  transition: text-decoration-color 0.2s;
+}
+
+.modal-detail a:hover {
+  text-decoration-color: var(--text);
+}
+
 .detail-heading {
   font-family: var(--serif);
   font-size: 21px;

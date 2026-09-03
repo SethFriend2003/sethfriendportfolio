@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Seth Friend</title>
-  <meta name="description" content="ECE junior at UT Austin — building robots, embedded systems, and whatever's next.">
+  <meta name="description" content="ECE senior at UT Austin — building robots, embedded systems, and whatever's next.">
   <meta property="og:title" content="Seth Friend">
-  <meta property="og:description" content="ECE junior at UT Austin — robotics, firmware, and the occasional game console.">
+  <meta property="og:description" content="ECE senior at UT Austin — robotics, firmware, and the occasional game console.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
         complex systems,<br>
         <em>and whatever's next.</em>
       </h1>
-      <p class="hero-sub">ECE junior at UT Austin — robotics, software, and the occasional game console.</p>
+      <p class="hero-sub">ECE senior at UT Austin — robotics, software, and the occasional game console.</p>
       <div class="hero-cta">
         <a href="#projects" class="btn-primary">See work</a>
         <a href="#contact" class="btn-secondary">Get in touch</a>
@@ -68,7 +68,7 @@
   <div class="about-inner reveal">
     <h2 class="section-title">About</h2>
     <div class="about-body">
-      <p>I'm a junior at UT Austin studying electrical and computer engineering, focused on robotics and embedded systems. I like problems that sit at the intersection of math, code, and physical things that move.</p>
+      <p>I'm a senior at UT Austin studying electrical and computer engineering, focused on robotics and embedded systems. I like problems that sit at the intersection of math, code, and physical things that move.</p>
       <p>Outside of school I've worked on robotic arm deployments at Amazon facilities. I'm currently working on sim-to-real transfer for a 7 kg bipedal humanoid robot — fully assembled in hardware, running a trained RL policy in simulation, working through getting it onto the actual robot.</p>
       <p>Before the university projects, a lot of garage builds and broken prototypes. That's still where most of the fun is.</p>
       <div class="about-tools">
@@ -130,9 +130,16 @@ const MODAL_DETAIL = {
   'humanoid-robot': [
     {
       h: null,
-      body: `<p>Architected and built a custom 7 kg bipedal humanoid robot from the ground up, drawing inspiration from Disney's Versatile Motion Priors (VMP) research. Working alongside a former Amazon colleague, I led the development of the lower-body mechanics, simulation environment, training policy, software, overall electronics architecture, and torso design.</p>
-             <p>For the hardware, I designed a 20 DoF system with 5 DoF per leg, 4 DoF per arm, and 2 DoF for the head. The lower body is powered by GIM6010-8 BLDC motors with integrated 9:1 gear reductions, controlled through ODrive controllers. The actuators are mounted directly at the joints to mirror the Disney bipedal architecture. The chassis combines machined aluminum plates, PETG, and TPU, and all motor controllers communicate with the main compute unit over a CAN bus network.</p>
-             <p>On the software and controls side, the robot is fully assembled in hardware and has been replicated in NVIDIA Isaac Sim as a digital twin. I trained a reinforcement learning policy for standing stabilization in simulation and am currently working through sim-to-real transfer. I've tuned the PID of all the leg motors, and my next steps are to complete the ROS 2 and Python control stack and deploy the trained model to the onboard Raspberry Pi.</p>`
+      body: `<p>Architected and built a custom 7&nbsp;kg bipedal humanoid robot from the ground up, drawing on Disney's Versatile Motion Priors (VMP) research. Working alongside a former Amazon colleague, I led the lower-body mechanics, the simulation environment, the training policy, the software, the overall electronics architecture, and the torso design.</p>
+             <p><a href="https://cockrell.utexas.edu/news/what-they-build-in-the-shadows/" target="_blank" rel="noopener">Featured by UT Austin's Cockrell School of Engineering — &ldquo;What They Build in the Shadows&rdquo; &#8599;</a></p>`
+    },
+    {
+      h: 'hardware',
+      body: `<p>A 20 DoF platform — 5 DoF per leg, 4 DoF per arm, and 2 DoF for the head. The lower body runs on GIM6010-8 BLDC motors with integrated 9:1 gear reductions, driven by ODrive controllers and mounted directly at the joints to mirror the Disney bipedal architecture. The chassis combines machined aluminum plates, PETG, and TPU, and every motor controller communicates with the main compute unit over a CAN bus network.</p>`
+    },
+    {
+      h: 'software & controls',
+      body: `<p>The robot is fully assembled in hardware and replicated in NVIDIA Isaac Sim as a digital twin. I trained a reinforcement learning policy for standing stabilization in simulation and am currently working through sim-to-real transfer. The PID loops on all leg motors are tuned; the next steps are completing the ROS 2 and Python control stack and deploying the trained model to the onboard Raspberry Pi.</p>`
     }
   ],
   'interview-coach': [
