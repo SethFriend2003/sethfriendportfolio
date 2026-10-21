@@ -69,7 +69,7 @@
     <h2 class="section-title">About</h2>
     <div class="about-body">
       <p>I'm a senior at UT Austin studying electrical and computer engineering, focused on robotics and embedded systems. I like problems that sit at the intersection of math, code, and physical things that move.</p>
-      <p>Outside of school I've worked on robotic arm deployments at Amazon facilities. I'm currently working on sim-to-real transfer for an 8 kg bipedal humanoid robot — fully assembled in hardware, running a trained RL policy in simulation, working through getting it onto the actual robot.</p>
+      <p>Outside of school I've worked on robotic arm deployments at Amazon facilities. I'm currently building an 8 kg bipedal humanoid robot, which now walks untethered on real hardware using reinforcement learning policies I trained in simulation.</p>
       <p>Before the university projects, a lot of garage builds and broken prototypes. That's still where most of the fun is.</p>
       <div class="about-tools">
         <span class="tools-label">Tools & Tech</span>
@@ -140,7 +140,8 @@ const MODAL_DETAIL = {
     },
     {
       h: 'software & controls',
-      body: `<p>The robot is fully assembled in hardware and replicated in NVIDIA Isaac Sim as a digital twin. I trained a reinforcement learning policy for standing stabilization in simulation and am currently working through sim-to-real transfer. The PID loops on all leg motors are tuned; the next steps are completing the ROS 2 and Python control stack and deploying the trained model to the onboard Raspberry Pi.</p>`
+      body: `<p>The robot walks. I trained PPO locomotion policies in Isaac Lab across 4,096 parallel environments, then validated them in MuJoCo through sim-to-sim transfer to make sure they held up across physics-engine differences before putting them on hardware. Onboard, a 50 Hz control stack on the Raspberry Pi handles CAN actuator control, IMU feedback, calibration, and safety checks.</p>
+             <p>The result is untethered walking on the physical robot over roughly 10 feet. Since then I've been refining the gait, reducing forward lean from 14.5&deg; to 3&ndash;5&deg; and toe-out from as much as 23&deg; down to 3&ndash;4&deg;.</p>`
     },
     { video: 1 }
   ],
