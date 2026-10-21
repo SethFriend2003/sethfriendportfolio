@@ -680,6 +680,8 @@ footer {
   margin: 32px 0 0;
 }
 
+.modal-videos.videos-first { margin: 0 0 40px; }
+
 .video-wrap {
   position: relative;
   aspect-ratio: 16 / 9;

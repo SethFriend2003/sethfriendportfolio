@@ -6,11 +6,12 @@
       "when": "2025 & 2026",
       "role": "Controls & Mechatronics",
       "hook": "8 kg bipedal from scratch — BLDC motors, ODrive controllers, and a trained RL policy.",
-      "summary": "Architected a 8 kg, 20 DoF bipedal robot with GIM6010-8 BLDC motors, ODrive controllers, CAN bus communication, and an NVIDIA Isaac Sim digital twin. Currently working through sim-to-real transfer.",
+      "summary": "Architected an 8 kg, 20 DoF bipedal robot with GIM6010-8 BLDC motors, ODrive controllers, CAN bus communication, and an NVIDIA Isaac Sim digital twin. Currently working through sim-to-real transfer.",
       "tags": ["robotics", "controls", "embedded", "mechanical", "cad", "software"],
       "image": "pictures/IMG_5399.jpeg",
       "images": ["pictures/IMG_5398.jpeg", "pictures/Screenshot 2025-08-28 161355.png"],
-      "videos": ["https://www.youtube.com/embed/JxTCPizGnGc", "https://www.youtube.com/embed/EDCRzRKFuJ0"]
+      "videos": ["https://www.youtube.com/embed/JxTCPizGnGc", "https://www.youtube.com/embed/tvT4pbpH7Ws"],
+      "videosFirst": true
     },
     {
       "id": "interview-coach",

@@ -69,7 +69,7 @@
     <h2 class="section-title">About</h2>
     <div class="about-body">
       <p>I'm a senior at UT Austin studying electrical and computer engineering, focused on robotics and embedded systems. I like problems that sit at the intersection of math, code, and physical things that move.</p>
-      <p>Outside of school I've worked on robotic arm deployments at Amazon facilities. I'm currently working on sim-to-real transfer for a 8 kg bipedal humanoid robot — fully assembled in hardware, running a trained RL policy in simulation, working through getting it onto the actual robot.</p>
+      <p>Outside of school I've worked on robotic arm deployments at Amazon facilities. I'm currently working on sim-to-real transfer for an 8 kg bipedal humanoid robot — fully assembled in hardware, running a trained RL policy in simulation, working through getting it onto the actual robot.</p>
       <p>Before the university projects, a lot of garage builds and broken prototypes. That's still where most of the fun is.</p>
       <div class="about-tools">
         <span class="tools-label">Tools & Tech</span>
@@ -406,7 +406,7 @@ function openModal(id) {
     : '';
 
   const videosHTML = (p.videos && p.videos.length)
-    ? `<div class="modal-videos">${p.videos.map(v =>
+    ? `<div class="modal-videos${p.videosFirst ? ' videos-first' : ''}">${p.videos.map(v =>
         `<div class="video-wrap"><iframe src="${v}" allowfullscreen></iframe></div>`
       ).join('')}</div>`
     : '';
@@ -417,10 +417,11 @@ function openModal(id) {
       <h2 class="modal-title">${p.title}</h2>
       <div class="card-tags">${(p.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}</div>
     </div>
+    ${p.videosFirst ? videosHTML : ''}
     ${galleryHTML}
     <div class="modal-detail">${detailHTML}</div>
     ${slidesHTML}
-    ${videosHTML}
+    ${p.videosFirst ? '' : videosHTML}
   `;
 
   modal.classList.add('is-open');
