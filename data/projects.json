@@ -10,8 +10,7 @@
       "tags": ["robotics", "controls", "embedded", "mechanical", "cad", "software"],
       "image": "pictures/IMG_5399.jpeg",
       "images": [],
-      "videos": ["https://www.youtube.com/embed/JxTCPizGnGc", "https://www.youtube.com/embed/tvT4pbpH7Ws"],
-      "videosFirst": true
+      "videos": ["https://www.youtube.com/embed/JxTCPizGnGc", "https://www.youtube.com/embed/tvT4pbpH7Ws"]
     },
     {
       "id": "interview-coach",

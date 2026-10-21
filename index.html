@@ -128,6 +128,7 @@
    ───────────────────────────────────────────── */
 const MODAL_DETAIL = {
   'humanoid-robot': [
+    { video: 0 },
     {
       h: null,
       body: `<p>Architected and built a custom 8&nbsp;kg bipedal humanoid robot from the ground up, drawing on Disney's Versatile Motion Priors (VMP) research. Working alongside a former Amazon colleague, I led the lower-body mechanics, the simulation environment, the training policy, the software, the overall electronics architecture, and the torso design.</p>
@@ -140,7 +141,8 @@ const MODAL_DETAIL = {
     {
       h: 'software & controls',
       body: `<p>The robot is fully assembled in hardware and replicated in NVIDIA Isaac Sim as a digital twin. I trained a reinforcement learning policy for standing stabilization in simulation and am currently working through sim-to-real transfer. The PID loops on all leg motors are tuned; the next steps are completing the ROS 2 and Python control stack and deploying the trained model to the onboard Raspberry Pi.</p>`
-    }
+    },
+    { video: 1 }
   ],
   'interview-coach': [
     {
@@ -397,16 +399,21 @@ function openModal(id) {
         `<img src="${src}" alt="${p.title}" loading="lazy">`).join('')}</div>`
     : '';
 
+  // A { video: n } entry places p.videos[n] inline; those videos skip the bottom list
+  const inlineVideos = new Set(detail.filter(s => s.video !== undefined).map(s => s.video));
   const detailHTML = detail.map(s =>
-    `${s.h ? `<h3 class="detail-heading">${s.h}</h3>` : ''}${s.body}`
+    s.video !== undefined
+      ? `<div class="video-wrap"><iframe src="${p.videos[s.video]}" allowfullscreen></iframe></div>`
+      : `${s.h ? `<h3 class="detail-heading">${s.h}</h3>` : ''}${s.body}`
   ).join('');
 
   const slidesHTML = p.slides
     ? `<div class="embed-wrap"><iframe src="${p.slides}" frameborder="0" allowfullscreen></iframe></div>`
     : '';
 
-  const videosHTML = (p.videos && p.videos.length)
-    ? `<div class="modal-videos${p.videosFirst ? ' videos-first' : ''}">${p.videos.map(v =>
+  const bottomVideos = (p.videos || []).filter((_, i) => !inlineVideos.has(i));
+  const videosHTML = bottomVideos.length
+    ? `<div class="modal-videos">${bottomVideos.map(v =>
         `<div class="video-wrap"><iframe src="${v}" allowfullscreen></iframe></div>`
       ).join('')}</div>`
     : '';
@@ -417,11 +424,10 @@ function openModal(id) {
       <h2 class="modal-title">${p.title}</h2>
       <div class="card-tags">${(p.tags || []).map(t => `<span class="tag">${t}</span>`).join('')}</div>
     </div>
-    ${p.videosFirst ? videosHTML : ''}
     ${galleryHTML}
     <div class="modal-detail">${detailHTML}</div>
     ${slidesHTML}
-    ${p.videosFirst ? '' : videosHTML}
+    ${videosHTML}
   `;
 
   modal.classList.add('is-open');
