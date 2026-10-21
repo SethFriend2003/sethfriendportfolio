@@ -9,7 +9,7 @@
       "summary": "Architected an 8 kg, 20 DoF bipedal robot with GIM6010-8 BLDC motors, ODrive controllers, CAN bus communication, and an NVIDIA Isaac Sim digital twin. Currently working through sim-to-real transfer.",
       "tags": ["robotics", "controls", "embedded", "mechanical", "cad", "software"],
       "image": "pictures/IMG_5399.jpeg",
-      "images": ["pictures/IMG_5398.jpeg", "pictures/Screenshot 2025-08-28 161355.png"],
+      "images": [],
       "videos": ["https://www.youtube.com/embed/JxTCPizGnGc", "https://www.youtube.com/embed/tvT4pbpH7Ws"],
       "videosFirst": true
     },
